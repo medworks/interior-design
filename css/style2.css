@@ -35,6 +35,9 @@ Table of Contents:
 /* ----------------------------------------------------
 	1) BOOTSTRAP OVERRIDE
 ------------------------------------------------------- */
+.rtl{
+	direction:rtl;
+}
 .btn{
 	border-radius: 0px;
 	text-decoration: none;
@@ -149,9 +152,9 @@ Table of Contents:
 	color: #333;
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 500;
-	letter-spacing: 1px;
+	font-size: 16px;
+	font-weight: 700;
+	/*letter-spacing: 1px;*/
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 	color: #d0ad55;
@@ -390,7 +393,7 @@ a:focus {
 	font-size: 16px;
 	color: #282828;
 	text-transform: uppercase;
-	font-weight: 500;	
+	font-weight: 700;	
 }
 .project-title h3{
 	font-family: 'Raleway', sans-serif;
@@ -671,7 +674,7 @@ a:focus {
 	font-size: 17px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 700;
 }
 .about-caption h5{
 	font-size: 18px;
@@ -855,6 +858,7 @@ a:focus {
 	line-height: 22px;
 	color: #4c4c4c;
 	margin-top: 9px;
+	text-align: right;
 }
 .cbp-popup-singlePage .cbp-l-project-subtitle {
 	margin: 0 auto 40px;
@@ -1082,6 +1086,7 @@ ul.contact-social{
 	border: 1px solid #F0F0F0; 
 	margin: 7px 0px; 	
 	font-weight: 100;
+	direction: rtl;
 }
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
 	box-shadow: none;
@@ -1097,6 +1102,7 @@ textarea{
 	margin-top: 7px;
 	margin-right:15px;	
 	font-weight: 100;
+	direction: rtl;
 }
 #contact input:focus, textarea:focus, select:focus{ 
 	border: 1px solid #d0ad55; 
@@ -1158,6 +1164,7 @@ acronym{
 .f-inner{
 	padding-top: 50px;
 	padding-bottom: 50px;
+	direction: rtl;
 }
 .f-inner:hover{
 	background-color: #d0ad55;
@@ -1179,7 +1186,7 @@ acronym{
 	font-size: 30px;
 	line-height: 31px;
 	font-weight: 300;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 	color: #fff;	
 	-webkit-font-smoothing: antialiased;
 }
@@ -1190,13 +1197,13 @@ acronym{
 	font-family: 'Raleway', sans-serif;
 	color: #ffffff!important;	
 	font-weight: 400;
-	font-size: 14px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+	font-size: 18px;
+	/*letter-spacing: 1px;*/
+	/*text-transform: uppercase;*/
 }
 .f-inner address{
-	font-size: 0.8em;
-	line-height: 1.8em;
+	font-size: 15px;
+	/*line-height: 1.8em;*/
 	margin: 0;
 }
 .f-inner i{
@@ -1223,7 +1230,7 @@ ul.footer-social{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
 	background-color: #d0ad55;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 25px;
 	color: #ffffff;
 	text-align: center;

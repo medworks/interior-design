@@ -61,9 +61,9 @@
                     <img src="./images/slide/image1.jpg" alt="fullslide1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                     <!-- LAYERS -->                        
                     <!-- LAYER NR. 1 -->
-                    <div class="tp-caption slider-text lfb ltt tp-resizeme text-center" data-x="center" data-hoffset="0" data-y="center" data-voffset="-30" data-speed="600" data-start="800" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">We are a creative interior<br>design</div>
+                    <div class="tp-caption slider-text lfb ltt tp-resizeme text-center" data-x="center" data-hoffset="0" data-y="center" data-voffset="-30" data-speed="600" data-start="800" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">توضیحات مربوط به اسلاید اول</div>
                     <!-- LAYER NR. 2 -->
-                    <div class="tp-caption lfb ltt tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="100" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a href="projects.html" class="btn black-btn">Get In Touch</a></div>
+                    <div class="tp-caption lfb ltt tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="100" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a href="javascript:void(0);" class="btn black-btn">بازدید</a></div>
                 </li>
                 <!-- END SLIDE -->
 
@@ -75,11 +75,11 @@
                     <!-- END MAIN IMAGE -->
 
                     <!-- LAYER NR. 1 -->
-                    <div class="tp-caption slider-text lfb ltt tp-resizeme text-center" data-x="center" data-hoffset="0" data-y="center" data-voffset="-30" data-speed="600" data-start="800" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">A beautiful way to show<br>your projects
+                    <div class="tp-caption slider-text lfb ltt tp-resizeme text-center" data-x="center" data-hoffset="0" data-y="center" data-voffset="-30" data-speed="600" data-start="800" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">توضیحات مربوط به اسلاید دوم
                     </div>
 
                     <!-- LAYER NR. 2 -->
-                    <div class="tp-caption lfb ltt tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="100" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a href="projects.html" class="btn black-btn">Get In Touch</a>                                                    
+                    <div class="tp-caption lfb ltt tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="100" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a href="javascript:void(0);" class="btn black-btn">بازدید</a>                                                    
                     </div>
 
                 </li>
@@ -93,11 +93,11 @@
                     <!-- END MAIN IMAGE -->                               
 
                     <!-- LAYER NR. 1 -->
-                    <div class="tp-caption slider-text lfb ltt tp-resizeme text-center" data-x="center" data-hoffset="0" data-y="center" data-voffset="-30" data-speed="600" data-start="800" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">Larx a creative template<br>for your business
+                    <div class="tp-caption slider-text lfb ltt tp-resizeme text-center" data-x="center" data-hoffset="0" data-y="center" data-voffset="-30" data-speed="600" data-start="800" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">توضیحات مربوط به اسلاید سوم
                     </div>
 
                     <!-- LAYER NR. 2 -->
-                    <div class="tp-caption lfb ltt tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="100" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a href="projects.html" class="btn black-btn">Get In Touch</a>                                                    
+                    <div class="tp-caption lfb ltt tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="100" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a href="javascript:void(0);" class="btn black-btn">بازدید</a>                                                    
                     </div>
 
                 </li>
@@ -122,17 +122,17 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- Logo -->        
-                    <a class="navbar-brand" href="#home">LARX</a>        
+                    <a class="navbar-brand" href="#home">جایگاه برند</a>        
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>                                                                            
-                        <li><a href="#projects">Projects</a></li>                    
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#blog">Blog</a></li>     
-                        <li class="dropdown">
+                        <li class="active"><a href="#home">صفحه اصلی</a></li>
+                        <li><a href="#about">درباره ما</a></li>                                                                            
+                        <li><a href="#projects">نمونه کارها</a></li>                    
+                        <li><a href="#services">خدمات</a></li>
+                        <li><a href="#blog">مقالات</a></li>     
+                        <!-- <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages <i class="fa fa-angle-down fa-lg"></i></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="onepage_dark.html">One Page Dark</a></li>
@@ -146,8 +146,8 @@
                                 <li><a href="404_page.html">404 Error</a></li>                                    
                                 <li><a href="coming_soon.html">Coming Soon</a></li>                                    
                             </ul>
-                        </li>                       
-                        <li><a href="#contactus">Contact</a></li>  
+                        </li> -->                      
+                        <li><a href="#contactus">تماس با ما</a></li>  
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -165,10 +165,10 @@
                 <div class="col-md-10 col-md-offset-1 about-caption text-center">
                     <!-- Section General Title -->
                     <div class="general-title general-title-black">
-                        <h2>Who We Are</h2>
+                        <h2>درباره ما</h2>
                         <div class="space-bottom-2x"></div>   
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
                     <div class="space-bottom-2x"></div>   
                 </div>                            
             </div>                
@@ -179,8 +179,8 @@
                         <i class="fa fa-html5 fa-2x"></i>                                    
                     </div>
                     <div class="col-sm-10">
-                        <h3>Bootstrap 3.2</h3>                                                                        
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                        <h3>اهداف</h3>                                                                        
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                     </div>
                 </div> 
 
@@ -190,8 +190,8 @@
                         <i class="fa fa-desktop fa-2x"></i>                                                                                
                     </div>
                     <div class="col-sm-10">
-                        <h3>ULTRA RESPONSIVE LAYOUT</h3>                                           
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                        <h3>چشم انداز</h3>                                           
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
                     </div>
                 </div>
 
@@ -201,8 +201,8 @@
                         <i class="fa fa-font fa-2x"></i>                                                                                
                     </div>
                     <div class="col-sm-10">
-                        <h3>GOOGLE FONTS</h3>                                                                                            
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>                                
+                        <h3>تاریخچه</h3>                                                                                            
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>                                
                     </div>
                 </div>    
 
@@ -211,18 +211,18 @@
         <!-- End Who We Are -->
 
         <!-- Our Process -->            
-        <section class="bg-color padding-bottom padding-top-x2">
-            <div class="container">                                                        
+        <!-- <section class="bg-color padding-bottom padding-top-x2">
+            <div class="container"> -->                                                        
 
                 <!-- Description -->
-                <div class="row">
+               <!-- <div class="row">
                     <div class="col-md-6">
                         <img src="./images/other/larx.png" alt="Specifie an alternate text for an image" class="img-responsive">    
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6"> -->
                         <!-- Title -->
-                        <div class="cta-title-2">
+                        <!-- <div class="cta-title-2">
                             <div class="space-bottom-2x"></div>      
                             <h2>LARX TEMPLATE</h2>
                             <div class="space-bottom-2x"></div>      
@@ -235,7 +235,7 @@
                 </div>
                 
             </div>                               
-        </section>                       
+        </section> -->                      
         <!-- End Our Process -->
 
         <!-- Projects -->            
@@ -244,23 +244,23 @@
                            
                 <!-- Section General Title -->
                 <div class="general-title general-title-black text-center">
-                    <h2>Our Works</h2>
+                    <h2>نمونه کارها</h2>
                     <div class="space-bottom-2x"></div>   
                 </div>
                          
                 <!-- Portfolio Filter -->
                 <div id="filters-container" class="cbp-l-filters-alignRight cbp-l-filters-black">
                     <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
-                        All <div class="cbp-filter-counter"></div>
+                        همه <div class="cbp-filter-counter"></div>
                     </div>
                     <div data-filter=".apartments" class="cbp-filter-item">
-                        Apartments <div class="cbp-filter-counter"></div>
+                        آپارتمان <div class="cbp-filter-counter"></div>
                     </div>
                     <div data-filter=".houses" class="cbp-filter-item">
-                        Houses <div class="cbp-filter-counter"></div>
+                        خانه <div class="cbp-filter-counter"></div>
                     </div>
                     <div data-filter=".architecture" class="cbp-filter-item">
-                        Architecture <div class="cbp-filter-counter"></div>
+                        معماری <div class="cbp-filter-counter"></div>
                     </div>
                 </div>
 
@@ -269,14 +269,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item apartments cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption cbp-lightbox" data-title="YouTube Embed" href="https://www.youtube.com/watch?v=53c6o_cNPEo&amp;feature=youtu.be">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/1.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/1.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">YouTube Embed</div>                                                
+                                            <div class="cbp-l-caption-title">عنوان</div>                                                
                                         </div>
                                     </div>
                                 </div>
@@ -285,15 +285,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item houses cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="Villa in Cannes<br>2014/04" href="assets/img/projects/2big.jpg">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/2.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/2.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">Villa in Cannes</div>
-                                            <div class="cbp-l-caption-desc">2014/04</div>
+                                            <div class="cbp-l-caption-title">عنوان</div>
                                         </div>
                                     </div>
                                 </div>
@@ -302,15 +301,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item architecture apartments cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="Summer House<br>2012/02" href="assets/img/projects/3big.jpg">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/3.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/3.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">Summer House</div>
-                                            <div class="cbp-l-caption-desc">2012/02</div>
+                                            <div class="cbp-l-caption-title">عنوان</div>
                                         </div>
                                     </div>
                                 </div>
@@ -319,14 +317,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item architecture cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption cbp-lightbox" data-title="Vimeo Embed" href="http://vimeo.com/52149990">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/4.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/4.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">Vimeo Embed</div>                                                
+                                            <div class="cbp-l-caption-title">عنوان</div>                                                
                                         </div>
                                     </div>
                                 </div>
@@ -335,15 +333,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item apartments cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption cbp-lightbox" data-title="Villa in Vegas<br>2011/01" href="assets/img/projects/5big.jpg">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/5.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/5.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">Villa in Vegas</div>
-                                            <div class="cbp-l-caption-desc">2011/01</div>
+                                            <div class="cbp-l-caption-title">عنوان</div>
                                         </div>
                                     </div>
                                 </div>
@@ -352,15 +349,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="House in Texas<br>2014/09" href="assets/img/projects/6big.jpg">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/6.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/6.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">House in Texas</div>
-                                            <div class="cbp-l-caption-desc">2014/09</div>
+                                            <div class="cbp-l-caption-title">عنوان</div>
                                         </div>
                                     </div>
                                 </div>
@@ -369,15 +365,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item houses cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="Luxury Apartment<br>2014/04" href="assets/img/projects/7big.jpg">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/7.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/7.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">Luxury Apartment</div>
-                                            <div class="cbp-l-caption-desc">2014/04</div>
+                                            <div class="cbp-l-caption-title">عنوان</div>
                                         </div>
                                     </div>
                                 </div>
@@ -386,15 +381,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item apartments cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="Luxury Villa<br>2012/02" href="assets/img/projects/8big.jpg">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/8.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/8.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">Luxury Villa</div>
-                                            <div class="cbp-l-caption-desc">2012/02</div>
+                                            <div class="cbp-l-caption-title">عنوان</div>
                                         </div>
                                     </div>
                                 </div>
@@ -403,15 +397,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item apartments cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption cbp-lightbox" data-title="House in Town<br>2014/04" href="assets/img/projects/9big.jpg">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/9.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/9.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">House in Town</div>
-                                            <div class="cbp-l-caption-desc">2014/04</div>
+                                            <div class="cbp-l-caption-title">عنوان</div>
                                         </div>
                                     </div>
                                 </div>
@@ -420,15 +413,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item houses architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="Apartment in Chicago<br>2014/05" href="assets/img/projects/10big.jpg">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/10.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/10.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">Apartment in Chicago</div>
-                                            <div class="cbp-l-caption-desc">2014/05</div>
+                                            <div class="cbp-l-caption-title">عنوان</div>
                                         </div>
                                     </div>
                                 </div>
@@ -437,15 +429,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item houses architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="Luxury House<br>2012/01" href="assets/img/projects/11big.jpg">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/11.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/11.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">Luxury House</div>
-                                            <div class="cbp-l-caption-desc">2012/01</div>
+                                            <div class="cbp-l-caption-title">عنوان</div>
                                         </div>
                                     </div>
                                 </div>
@@ -454,15 +445,14 @@
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item houses architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="Villa in Town<br>2010/01" href="assets/img/projects/12big.jpg">
+                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/12.jpg">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/12.jpg" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">Villa in Town</div>
-                                            <div class="cbp-l-caption-desc">2010/01</div>
+                                            <div class="cbp-l-caption-title">عنوان</div>
                                         </div>
                                     </div>
                                 </div>
@@ -476,10 +466,10 @@
         <!-- End Projects -->            
         
         <!-- Testimonials -->
-        <div id="testimonials">
-            <div class="container text-center padding-bottom padding-top-x2">
+        <!-- <div id="testimonials">
+            <div class="container text-center padding-bottom padding-top-x2"> -->
                 <!-- Section General Title -->
-                <div class="general-title general-title-black">
+                <!-- <div class="general-title general-title-black">
                     <h2>From Clients</h2>
                     <div class="space-bottom-2x"></div>   
                 </div>
@@ -510,7 +500,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End Testimonials -->
 
         <!-- Our Services -->            
@@ -525,9 +515,9 @@
 
                     <!-- Title and Description -->
                     <div class="service-title">    
-                        <h3>Minimal Design</h3>                      
+                        <h3>خدمت اول</h3>                      
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>            
                 </div>
 
                 <!-- Service Item (title, icon and description for your service) -->
@@ -537,9 +527,9 @@
                     
                     <!-- Title and Description -->
                     <div class="service-title">  
-                        <h3>Fully Documented</h3>      
+                        <h3>خدمت دوم</h3>      
                     </div>                
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>            
                 </div>                        
 
                 <!-- Service Item (title, icon and description for your service) -->
@@ -549,9 +539,9 @@
                     
                     <!-- Title and Description -->
                     <div class="service-title">  
-                        <h3>Built with Bootstrap</h3>                      
+                        <h3>خدمت سوم</h3>                      
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>            
                 </div>                                                              
 
                 <!-- Service Item (title, icon and description for your service) -->
@@ -561,9 +551,9 @@
                     
                     <!-- Title and Description -->
                     <div class="service-title">  
-                        <h3>Responsive Layout</h3>                      
+                        <h3>خدمت چهارم</h3>                      
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>            
                 </div>
 
                 <!-- Service Item (title, icon and description for your service) -->
@@ -573,9 +563,9 @@
                     
                     <!-- Title and Description -->
                     <div class="service-title">  
-                        <h3>Seo Optimized</h3>                      
+                        <h3>خدمت سوم</h3>                      
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>            
                 </div>
 
                 <!-- Service Item (title, icon and description for your service) -->
@@ -585,9 +575,9 @@
                     
                     <!-- Title and Description -->
                     <div class="service-title">  
-                        <h3>Clean Code</h3>                      
+                        <h3>خدمت ششم</h3>                      
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>            
                 </div>
 
             </div><!-- /row -->                                           
@@ -595,24 +585,24 @@
         <!-- End Our Services -->    
 
         <!-- Our Team -->
-        <div class="bg-color padding-top-x2 padding-bottom">                        
-            <div class="container">  
+        <!-- <div class="bg-color padding-top-x2 padding-bottom">                        
+            <div class="container">  -->
                 <!-- Section General Title -->
-                <div class="general-title general-title-black text-center">
+               <!-- <div class="general-title general-title-black text-center">
                     <h2>Our Team</h2>
                     <div class="space-bottom-2x"></div>      
                 </div>                          
-                <div class="row">                                 
+                <div class="row">  -->                               
 
                     <!-- Team Item (name, information about, image, social icons) -->
-                    <div class="col-sm-6 col-md-3">
+                    <!-- <div class="col-sm-6 col-md-3">
                         <div class="team-inner">
-                            <a href="#">  
+                            <a href="#">  -->
                                 <!-- Image -->                  
-                                <img src="./images/other/team_2.jpg" class="img-circle" alt="Specifie an alternate text for an image">                    
-                                </a><div class="team-caption"><a href="#">
+                                <!-- <img src="./images/other/team_2.jpg" class="img-circle" alt="Specifie an alternate text for an image">                    
+                                </a><div class="team-caption"><a href="#"> -->
                                     <!-- Social Icons -->
-                                    </a><div class="t-social-holder"><a href="#">
+                                   <!-- </a><div class="t-social-holder"><a href="#">
                                         </a><div class="team-social team-social-black"><a href="#">                                           
                                             </a><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
                                             <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
@@ -623,24 +613,24 @@
                                 </div>                                            
                             
                         </div>                                    
-                        <div class="team-details team-details-black text-center">
+                        <div class="team-details team-details-black text-center"> -->
                             <!-- Info -->
-                            <h5>Director</h5>  
+                            <!-- <h5>Director</h5>  -->
                             <!-- Name -->                                                                                        
-                            <h3>HERMIONE GRANGER</h3>   
+                           <!-- <h3>HERMIONE GRANGER</h3>   
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>                                                              
                         </div>
-                    </div>                                                               
+                    </div> -->                                                               
 
                     <!-- Team Item (name, information about, image, social icons) -->                      
-                    <div class="col-sm-6 col-md-3">
+                    <!-- <div class="col-sm-6 col-md-3">
                         <div class="team-inner">
-                            <a href="#">  
+                            <a href="#"> --> 
                                 <!-- Image -->                  
-                                <img src="./images/other/team_1.jpg" class="img-circle" alt="Specifie an alternate text for an image">                    
-                                </a><div class="team-caption"><a href="#">
+                                <!-- <img src="./images/other/team_1.jpg" class="img-circle" alt="Specifie an alternate text for an image">                    
+                                </a><div class="team-caption"><a href="#"> -->
                                     <!-- Social Icons -->
-                                    </a><div class="t-social-holder"><a href="#">
+                                    <!-- </a><div class="t-social-holder"><a href="#">
                                         </a><div class="team-social team-social-black"><a href="#">                                           
                                             </a><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
                                             <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
@@ -651,24 +641,24 @@
                                 </div>                                            
                             
                         </div>
-                        <div class="team-details team-details-black text-center">
+                        <div class="team-details team-details-black text-center"> -->
                             <!-- Info -->
-                            <h5>Manager</h5>  
+                            <!-- <h5>Manager</h5>   -->
                             <!-- Name -->                                            
-                            <h3>HARRY POTTER</h3>  
+                            <!-- <h3>HARRY POTTER</h3>  
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>                                                          
                         </div>
-                    </div>                                                    
+                    </div>  -->                                                  
 
                     <!-- Team Item (name, information about, image, social icons) -->                      
-                    <div class="col-sm-6 col-md-3">
+                    <!-- <div class="col-sm-6 col-md-3">
                         <div class="team-inner">
-                            <a href="#">  
+                            <a href="#">  -->
                                 <!-- Image -->                  
-                                <img src="./images/other/team_4.jpg" class="img-circle" alt="Specifie an alternate text for an image">                    
-                                </a><div class="team-caption"><a href="#">
+                                <!-- <img src="./images/other/team_4.jpg" class="img-circle" alt="Specifie an alternate text for an image">                    
+                                </a><div class="team-caption"><a href="#"> -->
                                     <!-- Social Icons -->
-                                    </a><div class="t-social-holder"><a href="#">
+                                    <!-- </a><div class="t-social-holder"><a href="#">
                                         </a><div class="team-social team-social-black"><a href="#">                                           
                                             </a><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
                                             <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
@@ -679,24 +669,24 @@
                                 </div>                                            
                             
                         </div>
-                        <div class="team-details team-details-black text-center">
+                        <div class="team-details team-details-black text-center"> -->
                             <!-- Info -->
-                            <h5>Architect</h5>  
+                            <!-- <h5>Architect</h5>  -->
                             <!-- Name -->                                                 
-                            <h3>RON WESLEY</h3>    
+                            <!-- <h3>RON WESLEY</h3>    
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>                                                        
                         </div>
-                    </div>            
+                    </div>     -->       
 
                     <!-- Team Item (name, information about, image, social icons) -->                      
-                    <div class="col-sm-6 col-md-3">
+                    <!-- <div class="col-sm-6 col-md-3">
                         <div class="team-inner">
-                            <a href="#">  
+                            <a href="#">   -->
                                 <!-- Image -->                  
-                                <img src="./images/other/team_3.jpg" class="img-circle" alt="Specifie an alternate text for an image">                    
-                                </a><div class="team-caption"><a href="#">
+                               <!-- <img src="./images/other/team_3.jpg" class="img-circle" alt="Specifie an alternate text for an image">                    
+                                </a><div class="team-caption"><a href="#"> -->
                                     <!-- Social Icons -->
-                                    </a><div class="t-social-holder"><a href="#">
+                                    <!-- </a><div class="t-social-holder"><a href="#">
                                         </a><div class="team-social team-social-black"><a href="#">                                           
                                             </a><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
                                             <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
@@ -707,24 +697,24 @@
                                 </div>                                            
                             
                         </div>
-                        <div class="team-details team-details-black text-center">
+                        <div class="team-details team-details-black text-center"> -->
                             <!-- Info -->
-                            <h5>Designer</h5>  
+                            <!-- <h5>Designer</h5> --> 
                             <!-- Name -->                                                                                         
-                            <h3>GINNY WESLEY</h3>                                                                    
+                           <!-- <h3>GINNY WESLEY</h3>                                                                    
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
                         </div>
                     </div>
 
-                </div><!-- /row -->
-            </div><!-- /container -->                
-        </div>
+                </div> --><!-- /row -->
+            <!-- </div> --><!-- /container -->                
+        <!-- </div> -->
         <!-- End Our Team -->
 
         <!-- Pricing Tables -->
-        <div class="container padding-top-x2 padding-bottom text-center">
+       <!-- <div class="container padding-top-x2 padding-bottom text-center"> -->
             <!-- Section General Title -->
-            <div class="general-title general-title-black">
+            <!-- <div class="general-title general-title-black">
                 <h2>Pricing Tables</h2>
                 <div class="space-bottom-2x"></div>      
             </div>
@@ -785,14 +775,14 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
         <!-- End Pricing Tables -->    
 
         <!-- Our Clients -->                
-        <div id="our-clients">
-            <div class="padding-top-x2 padding-bottom container text-center">  
+        <!-- <div id="our-clients">
+            <div class="padding-top-x2 padding-bottom container text-center">  -->
                 <!-- Section General Title -->
-                <div class="general-title general-title-black">
+               <!--  <div class="general-title general-title-black">
                     <h2>Our Clients</h2>    
                     <div class="space-bottom-2x"></div>                      
                 </div>                            
@@ -809,9 +799,9 @@
                         <a href="#"><img src="./images/other/client_4.png" alt="Owl Image"></a>
                     </div>                                
 
-                </div><!-- /row -->  
-            </div><!-- /container -->
-        </div>                    
+                </div> --><!-- /row -->  
+            <!-- </div> --><!-- /container -->
+        <!-- </div>  -->                   
         <!-- End Our Clients -->                                         
 
         <!-- From Blog -->
@@ -819,7 +809,7 @@
             <div class="container">
                 <!-- Section General Title -->
                 <div class="general-title general-title-black text-center">
-                    <h2>From Blog</h2>  
+                    <h2>مقالات</h2>  
                     <div class="space-bottom-2x"></div>                       
                 </div>
                 <div class="row">
@@ -828,32 +818,29 @@
                         <ul>
                             <!-- Blog Item -->
                             <li class="cbp-item ideas motion">
-                                <a href="blog-posts/post1.html" class="cbp-caption cbp-singlePage">
+                                <a href="javascript:void(0);" class="cbp-caption cbp-singlePage">
                                     <!-- Blog Image -->
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="./images/other/blog_1.jpg" alt="Specifie an alternate text for an image">                    
+                                        <img src="./images/other/blog_1.jpg" alt="">                    
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
+                                                <div class="cbp-l-caption-text">مشاهده</div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                                 <!-- Blog Information -->
                                 <div class="text-center">
-                                    <a href="blog-posts/post1.html" class="cbp-l-grid-blog-title cbp-singlePage">Lorem ipsum dolor sit amet</a>
-                                    <div class="cbp-l-grid-blog-date">20 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments cbp-l-grid-blog-comments-black">12 comments</a>
+                                    <a href="javascript:void(0);" class="cbp-l-grid-blog-title cbp-singlePage">مطلب اول</a>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>                            
+                                <div class="cbp-l-grid-blog-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>                            
                             </li>
 
                             <!-- Blog Item -->
                             <li class="cbp-item house-design decoration">
-                                <a href="blog-posts/post2.html" class="cbp-caption cbp-singlePage">
+                                <a href="javascript:void(0);" class="cbp-caption cbp-singlePage">
                                     <!-- Blog Image -->
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="./images/other/blog_2.jpg" alt="Specifie an alternate text for an image">                    
@@ -861,24 +848,21 @@
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
+                                                <div class="cbp-l-caption-text">مشاهده</div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                                 <!-- Blog Information -->
                                 <div class="text-center">
-                                    <a href="blog-posts/post2.html" class="cbp-l-grid-blog-title cbp-singlePage">Consectetuer adipiscing elit sed diam </a>
-                                    <div class="cbp-l-grid-blog-date">11 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments cbp-l-grid-blog-comments-black">1 comments</a>
+                                    <a href="javascript:void(0);" class="cbp-l-grid-blog-title cbp-singlePage">مطلب دوم</a>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
+                                <div class="cbp-l-grid-blog-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
                             </li>
 
                             <!-- Blog Item -->
                             <li class="cbp-item ideas motion">
-                                <a href="blog-posts/post3.html" class="cbp-caption cbp-singlePage">
+                                <a href="javascript:void(0);" class="cbp-caption cbp-singlePage">
                                     <!-- Blog Image -->
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="./images/other/blog_3.jpg" alt="Specifie an alternate text for an image">                    
@@ -886,19 +870,16 @@
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
+                                                <div class="cbp-l-caption-text">مشاهده</div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                                 <!-- Blog Information -->
                                 <div class="text-center">
-                                    <a href="blog-posts/post3.html" class="cbp-l-grid-blog-title cbp-singlePage">Nonummy nibh euismod tincidunt</a>
-                                    <div class="cbp-l-grid-blog-date">2 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments cbp-l-grid-blog-comments-black">22 comments</a>
+                                    <a href="javascript:void(0);" class="cbp-l-grid-blog-title cbp-singlePage">مطلب سوم</a>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
+                                <div class="cbp-l-grid-blog-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
                             </li>
                         </ul>
                     </div>                                                                                                                   
@@ -916,7 +897,7 @@
     <!-- End Google Map -->                         
 
     <div class="f-action" id="contactus">
-        <a href="#" class="f-cta f-cta-black" data-toggle="modal" data-target="#myModal">Work with us</a>
+        <a href="#" class="f-cta f-cta-black" data-toggle="modal" data-target="#myModal">تماس با ما</a>
     </div>
             
     <!-- Modal -->
@@ -924,29 +905,29 @@
         <div class="modal-dialog">
             <div class="modal-content text-center">
                 <div class="modal-header">
-                    <button type="button" class="close close-black" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <button type="button" class="close close-black" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">بستن</span></button>
                 </div>
                 <div class="modal-body">
                     <!-- Contact Form (name, email, phone and message inputs for your email form "should change your email adress in contact.php file") -->     
                     <div id="contact">                            
                         <div id="message"></div>
-                        <form method="post" action="contact.php" name="contactform" id="contactform">
+                        <form method="post" action="" name="contactform" id="contactform">
                             <fieldset>
                                 <div class="col-md-12">
                                     <!-- Name -->
-                                    <input kl_virtual_keyboard_secure_input="on" name="name" id="name" size="30" value="" placeholder="Name" type="text">
+                                    <input kl_virtual_keyboard_secure_input="on" name="name" id="name" size="30" value="" placeholder="نام" type="text">
                                     <br>
                                     <!-- Email -->
-                                    <input kl_virtual_keyboard_secure_input="on" name="email" id="email" size="30" value="" placeholder="Email" type="text">
+                                    <input kl_virtual_keyboard_secure_input="on" name="email" id="email" size="30" value="" placeholder="ایمیل" type="text">
                                     <br> 
                                     <!-- Phone -->
-                                    <input kl_virtual_keyboard_secure_input="on" name="phone" id="phone" size="30" value="" placeholder="Phone" type="text">
+                                    <input kl_virtual_keyboard_secure_input="on" name="phone" id="phone" size="30" value="" placeholder="تلفن" type="text">
 
                                     <!-- Message -->                                                                        
-                                    <textarea name="comments" cols="40" rows="5" id="comments" placeholder="Message"></textarea>
+                                    <textarea name="comments" cols="40" rows="5" id="comments" placeholder="پیام"></textarea>
                                      
                                     <!-- Submit Button -->                                        
-                                    <button type="submit" class="btn black-btn blog-btn submit" id="submit" value="Submit">Submit</button>
+                                    <button type="submit" class="btn black-btn blog-btn submit" id="submit" value="Submit">ارسال</button>
                                 </div>                                                                                                                                                             
                             </fieldset>
                         </form>                            
@@ -965,7 +946,7 @@
                 <!-- About Us Information -->
                 <div class="col-md-3 col-sm-6">                           
                     <div class="f-logo">
-                        <h2>Our<br>Offices</h2>                                                                    
+                        <h2>دفاتر ما</h2>                                                                    
                     </div>
                 </div>
                 
@@ -975,12 +956,12 @@
                         <i class="fa fa-map-marker fa-lg"></i> 
                     </div>
                     <div class="col-sm-10">
-                        <strong>New York</strong>
+                        <strong>مشهد</strong>
                         <div class="f-space"></div>
                         <address>                                
-                            795 Folsom Ave, Suite 600<br>                                
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                            first.last@example.com
+                            سه راه فلسطین ساختمان 202<br>                                
+                            <abbr title="Phone"></abbr><span style="direction:ltr;display:inline-block"> (513) 766-6436<span><br />
+                            info@mediateq.ir
                         </address>                           
                     </div>
                 </div>
@@ -991,13 +972,13 @@
                         <i class="fa fa-map-marker fa-lg"></i> 
                     </div>
                     <div class="col-sm-10">
-                        <strong>London</strong>
+                        <strong>مشهد</strong>
                         <div class="f-space"></div>
                         <address>                                
-                            795 Folsom Ave, Suite 600<br>                                
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                            first.last@example.com
-                        </address>
+                            سه راه فلسطین ساختمان 202<br>                                
+                            <abbr title="Phone"></abbr><span style="direction:ltr;display:inline-block"> (513) 766-6436<span><br />
+                            info@mediateq.ir
+                        </address>    
                     </div>
                 </div>
 
@@ -1007,13 +988,13 @@
                         <i class="fa fa-map-marker fa-lg"></i> 
                     </div>
                     <div class="col-sm-10">
-                        <strong>Berlin</strong>
+                        <strong>مشهد</strong>
                         <div class="f-space"></div>
                         <address>                                
-                            795 Folsom Ave, Suite 600<br>                                
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                            first.last@example.com
-                        </address>
+                            سه راه فلسطین ساختمان 202<br>                                
+                            <abbr title="Phone"></abbr><span style="direction:ltr;display:inline-block"> (513) 766-6436<span><br />
+                            info@mediateq.ir
+                        </address>    
                     </div>      
                 </div>                           
 
@@ -1026,7 +1007,7 @@
             <div class="row">                                                         
                 <!-- Copyright -->                                                       
                 <div class="col-sm-6 col-md-6 f-copyright">                        
-                    <span>© Copyright LARX - All Rights Reserved</span>                        
+                    <span>© Copyright Mediateq.ir - All Rights Reserved</span>                        
                 </div>                      
                 <div class="col-sm-6 col-md-6">
                     <!-- Social Icons -->                              
