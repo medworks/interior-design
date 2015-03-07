@@ -35,11 +35,13 @@ $html.=<<<cd
 					data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 2; max-width: auto; max-height: auto;
 					white-space: nowrap;">{$slides[$i]["body"]}</div>
                     <!-- LAYER NR. 2 -->
+					<!--
                     <div class="tp-caption lfb ltt tp-resizeme" data-x="center" data-hoffset="0" data-y="center" 
 					data-voffset="100" data-speed="600" data-start="900" data-easing="Power4.easeOut" 
 					data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" 
 					data-endspeed="500" data-endeasing="Power4.easeIn" style="z-index: 3; max-width: auto; max-height: auto;
 					white-space: nowrap;"><a href="javascript:void(0);" class="btn black-btn">بازدید</a></div>
+					-->
                 </li>
                 <!-- END SLIDE -->
 cd;
