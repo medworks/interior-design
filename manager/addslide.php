@@ -16,19 +16,20 @@
     }
     $db = Database::GetDatabase();
   
-  	function uploadpics($mode,$fileup,$db,$subject,$body,$filename=NULL)
+  	function uploadpics($mode,$fileup,$db,$subject,$body,$id=0)
 	{
 		$target_dir = "../slides/";
 		$imageFileType = pathinfo($_FILES[$fileup]["name"],PATHINFO_EXTENSION);
 		//$target_file = $target_dir . basename($_FILES[$fileup]["name"]);
-		if (!isset($filename))
+	/* 	if (!isset($filename))
 		{
 			$target_file = $target_dir . basename($_FILES[$fileup]["name"]);
 		}
 		else
 		{
 			$target_file = $target_dir .$filename.".".$imageFileType;
-		}
+		} */
+		$target_file = $target_dir . basename($_FILES[$fileup]["name"]);
 		$uploadOk = 1;
 		
 		
@@ -73,13 +74,18 @@
 		else 
 		{    
 			if ($mode == "insert")
-			{
-				// kind 1 is for goods pics, 2 is for news pics
+			{				
 				if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
 				{	
-					$fn = $filename.".".$imageFileType;
+					$pic = $db->Select("slides","*","id = '{$id}'");
+					if (file_exists($pic["image"]))
+					{
+						unlink($pic["image"]);
+					}
+					$db->Delete("slides"," id",$id);	
+					$fn = $target_file;//$filename.".".$imageFileType;
 					$fields = array("`subject`","`body`","`image`");				
-					$values = array("'{$subject}'","{$body}","'{$fn}'");
+					$values = array("'{$subject}'","'{$body}'","'{$fn}'");					
 					$db->InsertQuery('slides',$fields,$values);
 				} 
 				else 
@@ -94,7 +100,7 @@
 					
 					if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
 					{	
-						$fn = $filename.".".$imageFileType;
+						$fn = $target_file;//$filename.".".$imageFileType;
 						$fields = array("`subject`","`body`","`image`");				
 						$values = array("'{$subject}'","{$body}","'{$fn}'");
 						$db->InsertQuery('slides',$fields,$values);
@@ -111,7 +117,8 @@
     
     if ($_POST["mark"]=="saveslide")
     {     
-            upload($db,$did,"insert");
+            uploadpics("insert","userfile",$db,$_POST["edtsubject"],$_POST["edtbody"]);
+			//echo $db->cmd;
             header('location:addslide.php?act=new&msg=1');
     }
     else
@@ -181,7 +188,7 @@ $html=<<<cd
                                 <div class="panel-body">
                                     <div class="row ls_divider last">
                                         <div class="col-md-10 ls-group-input">
-                                            <textarea id="edttext" name="edttext" class="animatedTextArea form-control " >
+                                            <textarea id="edttext" name="edtbody" class="animatedTextArea form-control " >
                                                 {$row["text"]}
                                             </textarea>
                                         </div>
@@ -203,8 +210,7 @@ $html=<<<cd
                                                 <input kl_virtual_keyboard_secure_input="on" id="userfile" name="userfile" class="file" multiple="true" data-preview-file-type="any" type="file" />
                                                 <input type="hidden" name="MAX_FILE_SIZE" value="512000" />
                                             </div>
-                                        </div>
-                                        
+                                        </div>                                        
                                     </div>                                   
                                 </div>
                             </div>
