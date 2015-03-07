@@ -15,53 +15,99 @@
         die(); // solve a security bug
     }
     $db = Database::GetDatabase();
-    function upload($db,$did,$mode)
-    {
-        if(is_uploaded_file($_FILES['userfile']['tmp_name']) && getimagesize($_FILES['userfile']['tmp_name']) != false)
-        {    
-            $size = getimagesize($_FILES['userfile']['tmp_name']);      
-            $type = $size['mime'];
-            $imgfp = mysqli_real_escape_string($db->link,file_get_contents($_FILES['userfile']['tmp_name']));
-            //echo $imgfp;
-            $size = $size[3];
-            $name = $_FILES['userfile']['name'];
-            $maxsize = 512000;//512 kb
-            //$db = Database::GetDatabase();
-            //echo $db->cmd;
-            if($_FILES['userfile']['size'] < $maxsize )
-            {    
-                //echo "my1";
-                //tid 1 is for menu pics, 2 for news pics, 3 for maghalat pics
-                if ($mode == "insert")
-                {
-                    $fields = array("`subject`","`text`","`itype`","`img`","`iname`","`isize`");     
-                    $values = array("'{$_POST[edtsubject]}'","'{$_POST[edttext]}'","'{$type}'","'{$imgfp}'","'{$name}'","'{$size}'"); 
-                    $db->InsertQuery('slide',$fields,$values);
-                }
-                else
-                {
-                  $imgrow =$db->Select("slide","*","id='{$did}'");
-                  if ($imgfp != $imgrow["img"])
-                  {
-                    $values = array("`subject`"=>"'{$_POST[edtsubject]}'",
-									"`text`"=>"'{$_POST[edttext]}'",
-									"`itype`"=>"'{$type}'","`img`"=>"'{$imgfp}'",
-									"`iname`"=>"'{$name}'","`isize`"=>"'{$size}'");
-                    $db->UpdateQuery("slide",$values,array("id='{$did}'")); 
-                  } 
-                }   
-                //echo $db->cmd;
-            }
-            else
-            {        
-                throw new Exception("File Size Error");
-            }
-        }
-        else
-        {       
-            throw new Exception("Unsupported Image Format!");
-        }
-    }   
+  
+  	function uploadpics($mode,$fileup,$db,$subject,$body,$filename=NULL)
+	{
+		$target_dir = "../slides/";
+		$imageFileType = pathinfo($_FILES[$fileup]["name"],PATHINFO_EXTENSION);
+		//$target_file = $target_dir . basename($_FILES[$fileup]["name"]);
+		if (!isset($filename))
+		{
+			$target_file = $target_dir . basename($_FILES[$fileup]["name"]);
+		}
+		else
+		{
+			$target_file = $target_dir .$filename.".".$imageFileType;
+		}
+		$uploadOk = 1;
+		
+		
+		if(isset($_POST["submit"])) 
+		{
+			$check = getimagesize($_FILES[$fileup]["tmp_name"]);
+			if($check !== false) 
+			{				
+				$uploadOk = 1;
+			} 
+			else 
+			{
+				echo "File is not an image.";
+				$uploadOk = 0;
+			}
+		}
+		// Check if file already exists
+		/* if (file_exists($target_file)) 
+		{
+			echo "Sorry, file already exists.";
+			$uploadOk = 0;
+		} */
+		// Check file size
+		if ($_FILES[$fileup]["size"] > 500000) 
+		{
+			echo "Sorry, your file is too large.";
+			$uploadOk = 0;
+		}
+		// Allow certain file formats
+		if($imageFileType != "jpg" && $imageFileType != "png" && 
+		$imageFileType != "jpeg"&& $imageFileType != "gif" ) 
+		{
+			echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+			$uploadOk = 0;
+		}
+		// Check if $uploadOk is set to 0 by an error
+		if ($uploadOk == 0) 
+		{
+			echo "Sorry, your file was not uploaded.";
+			// if everything is ok, try to upload file
+		} 
+		else 
+		{    
+			if ($mode == "insert")
+			{
+				// kind 1 is for goods pics, 2 is for news pics
+				if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
+				{	
+					$fn = $filename.".".$imageFileType;
+					$fields = array("`subject`","`body`","`image`");				
+					$values = array("'{$subject}'","{$body}","'{$fn}'");
+					$db->InsertQuery('slides',$fields,$values);
+				} 
+				else 
+				{
+					echo "Sorry, there was an error uploading your file.";
+				}
+			}
+			else
+			{
+				//if (!empty($_FILES[$fileup]["name"])) 
+				{
+					
+					if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
+					{	
+						$fn = $filename.".".$imageFileType;
+						$fields = array("`subject`","`body`","`image`");				
+						$values = array("'{$subject}'","{$body}","'{$fn}'");
+						$db->InsertQuery('slides',$fields,$values);
+					} 
+					else 
+					{
+						echo "Sorry, there was an error uploading your file.";
+					}
+				}	
+			}
+		}
+	}
+	
     
     if ($_POST["mark"]=="saveslide")
     {     
@@ -83,7 +129,7 @@
     }
 	if ($_GET['act']=="edit")
 	{
-	    $row=$db->Select("topics","*","id='{$_GET["did"]}'",NULL);		
+	    $row=$db->Select("slides","*","id='{$_GET["did"]}'",NULL);		
 		$insertoredit = "
 			<button id='submit' type='submit' class='btn btn-default'>ویرایش</button>
 			<input type='hidden' name='mark' value='editslide' /> ";
@@ -126,7 +172,7 @@ $html=<<<cd
                             </div>
                         </div>
                     </div> 
-                    <!-- <div class="row">
+                    <div class="row">
                         <div class="col-md-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -143,7 +189,7 @@ $html=<<<cd
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="panel panel-default">

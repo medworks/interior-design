@@ -19,8 +19,8 @@
 	$db = Database::GetDatabase(); 
 	if ($_GET['act']=="del")
 	{
-		$db->Delete("slide"," id ",$_GET["did"]);		
-		header('location:editgallery.php?act=new');	
+		$db->Delete("slides"," id ",$_GET["did"]);		
+		header('location:editslide.php?act=new');	
 	}		
     
 $html.=<<<cd
@@ -59,7 +59,7 @@ $html.=<<<cd
                                             <tr>
 											<th>#</th>
                                                 <th>عنوان</th>
-                                                <!-- <th>متن</th> -->
+                                                <th>متن</th>
                                                 <th>تصویر</th>
                                                 <th class="text-center">عملیات</th>
                                             </tr>
@@ -72,36 +72,36 @@ cd;
 
 	$pagination->navigation_position("right");
 
-	$reccount = $db->CountAll("slide");
+	$reccount = $db->CountAll("slides");
 	$pagination->records($reccount); 
 	
     $pagination->records_per_page($records_per_page);	
 
-$rows = $db->SelectAll(
-				"slide",
-				"*",
-				NULL,
-				"id ASC",
-				($pagination->get_page() - 1) * $records_per_page,
-				$records_per_page);
+$rows = $db->SelectAll("slides",
+		       "*",
+		       NULL,
+		       "id ASC",
+		       ($pagination->get_page() - 1) * $records_per_page,
+		        $records_per_page);
 				
 	
-$vals = array();
+
 for($i = 0; $i < Count($rows); $i++)
 {
 $rownumber = $i+1;
 $rows[$i]["subject"] =(mb_strlen($rows[$i]["subject"])>20)?mb_substr($rows[$i]["subject"],0,20,"UTF-8")."...":$rows[$i]["subject"];
 $rows[$i]["text"] =(mb_strlen($rows[$i]["text"])>20)?mb_substr($rows[$i]["text"],0,20,"UTF-8")."...":$rows[$i]["text"];
-//$pic = $db->Select("pics","*","sid='{$_GET["did"]}' AND tid = 1",NULL);
+
 $img = base64_encode($rows[$i]['img']);
 $src = 'data: '.$rows[$i]['itype'].';base64,'.$img;
+
 $html.=<<<cd
 
                                                 
                                             <tr>
                                                 <td>{$rownumber}</td>
                                                 <td>{$rows[$i]["subject"]}</td>
-                                                <!-- <td>{$rows[$i]["text"]}</td> -->
+                                                <td>{$rows[$i]["text"]}</td>
                                                 <td>
                                                     <img src="{$src}" width="50px" height="50px" /> 
                                                 </td>
@@ -134,5 +134,5 @@ $html.=<<<cd
 cd;
 	include_once("./inc/header.php");
 	echo $html;
-    include_once("./inc/footer.php");
+	include_once("./inc/footer.php");
 ?>
