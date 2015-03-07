@@ -818,7 +818,7 @@
                         <ul>
                             <!-- Blog Item -->
                             <li class="cbp-item ideas motion">
-                                <a href="javascript:void(0);" class="cbp-caption cbp-singlePage">
+                                <a href="single-article.php" class="cbp-caption cbp-singlePage">
                                     <!-- Blog Image -->
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="./images/other/blog_1.jpg" alt="">                    
@@ -833,14 +833,14 @@
                                 </a>
                                 <!-- Blog Information -->
                                 <div class="text-center">
-                                    <a href="javascript:void(0);" class="cbp-l-grid-blog-title cbp-singlePage">مطلب اول</a>
+                                    <a href="single-article.php" class="cbp-l-grid-blog-title cbp-singlePage">مطلب اول</a>
                                 </div>
                                 <div class="cbp-l-grid-blog-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>                            
                             </li>
 
                             <!-- Blog Item -->
                             <li class="cbp-item house-design decoration">
-                                <a href="javascript:void(0);" class="cbp-caption cbp-singlePage">
+                                <a href="single-article.php" class="cbp-caption cbp-singlePage">
                                     <!-- Blog Image -->
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="./images/other/blog_2.jpg" alt="Specifie an alternate text for an image">                    
@@ -855,14 +855,14 @@
                                 </a>
                                 <!-- Blog Information -->
                                 <div class="text-center">
-                                    <a href="javascript:void(0);" class="cbp-l-grid-blog-title cbp-singlePage">مطلب دوم</a>
+                                    <a href="single-article.php" class="cbp-l-grid-blog-title cbp-singlePage">مطلب دوم</a>
                                 </div>
                                 <div class="cbp-l-grid-blog-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
                             </li>
 
                             <!-- Blog Item -->
                             <li class="cbp-item ideas motion">
-                                <a href="javascript:void(0);" class="cbp-caption cbp-singlePage">
+                                <a href="single-article.php" class="cbp-caption cbp-singlePage">
                                     <!-- Blog Image -->
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="./images/other/blog_3.jpg" alt="Specifie an alternate text for an image">                    
@@ -877,7 +877,7 @@
                                 </a>
                                 <!-- Blog Information -->
                                 <div class="text-center">
-                                    <a href="javascript:void(0);" class="cbp-l-grid-blog-title cbp-singlePage">مطلب سوم</a>
+                                    <a href="single-article.php" class="cbp-l-grid-blog-title cbp-singlePage">مطلب سوم</a>
                                 </div>
                                 <div class="cbp-l-grid-blog-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
                             </li>

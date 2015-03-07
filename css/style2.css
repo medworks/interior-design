@@ -846,8 +846,8 @@ a:focus {
 	font-family: 'Raleway', sans-serif;
 	font-size: 30px;
 	line-height: 31px;
-	font-weight: 300;
-	letter-spacing: 3px;
+	font-weight: 700;
+	/*letter-spacing: 3px;*/
 	-webkit-font-smoothing: antialiased;
 }
 .cbp-popup-singlePage-counter {
