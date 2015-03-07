@@ -113,7 +113,7 @@
         <div class="container padding-bottom">              
                 
             <div class="row">
-                <div class="col-md-10 col-md-offset-1 about-caption text-center">
+                <div class="col-md-10 col-md-offset-1 about-caption text-center" style="float:left">
                     <!-- Section General Title -->
                     <div class="general-title general-title-black">
                         <h2>درباره ما</h2>
