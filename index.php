@@ -140,7 +140,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item apartments cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/1.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/1.jpg" alt="">
                                 </div>

@@ -23,7 +23,7 @@
 			navigationArrows:"solo",
 			navigationStyle:"preview1",
 			
-			touchenabled:"off",
+			touchenabled:"on",
 			onHoverStop:"off",
 			
 			swipe_velocity: 0.7,
@@ -32,7 +32,7 @@
 			drag_block_vertical: false,
 									
 									
-			keyboardNavigation:"off",
+			keyboardNavigation:"on",
 			
 			navigationHAlign:"center",
 			navigationVAlign:"bottom",
@@ -60,7 +60,7 @@
 			stopAtSlide:-1,
 
 			shuffle:"off",
-			hideTimerBar:"on",
+			hideTimerBar:"off",
 									
 			forceFullWidth:"off",                       
 			fullScreenAlignForce:"off",                     
