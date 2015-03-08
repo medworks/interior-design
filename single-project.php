@@ -55,7 +55,7 @@ $html.=<<<cd
     <!-- End Slider -->
     
         <!-- Projects -->
-        <div class="site-wrapper">                        
+        <div class="site-wrapper" style="padding-top:40px">                        
 
             <!-- Who We Are -->            
             <div class="container who-we-are padding-bottom">              
