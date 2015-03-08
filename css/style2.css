@@ -569,7 +569,7 @@ a:focus {
 }
 #blog_bg{
 	color: #fff;
-	background: url('../img/header_bg/image4.jpg') 50% 0 no-repeat fixed;
+	background: url('../images/article-header.jpg') 50% 0 no-repeat fixed;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	background-size: cover;					
@@ -865,6 +865,7 @@ a:focus {
 	color: #4c4c4c;
 	margin-top: 9px;
 	text-align: right;
+	direction: rtl;
 }
 .cbp-popup-singlePage .cbp-l-project-subtitle {
 	margin: 0 auto 40px;
