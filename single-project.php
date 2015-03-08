@@ -17,7 +17,7 @@
 $html=<<<cd
     <!-- Slider -->        
     <div class="tp-banner-container" id="home">
-        <div class="tp-banner">
+        <div class="tp-banner-project">
             <ul> 
 cd;
 for($i = 0; $i < Count($slides); $i++)
@@ -53,17 +53,28 @@ $html.=<<<cd
         </div>                    
     </div>         
     <!-- End Slider -->
-
-
+    
         <!-- Projects -->
-        <div class="container padding-bottom padding-top-x2">
-            <div class="row">
-                           
-               
-                                    
-                
-            </div><!-- /row -->   
-        </div><!-- /container -->
+        <div class="site-wrapper">                        
+
+            <!-- Who We Are -->            
+            <div class="container who-we-are padding-bottom">              
+                <div class="row">
+                    <div class="col-md-12 about-caption">
+                        <div class="general-title">
+                            <h2>عنوان</h2>
+                            <div class="space-bottom-2x"></div>   
+                        </div>
+                        <p style="line-height:1.5">
+                            
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>                        
+                    </div>              
+                          
+                </div>                                              
+            </div><!-- /container -->                                   
+
+        </div>
         <!-- End Projects -->
 cd;
 

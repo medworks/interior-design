@@ -380,6 +380,7 @@ a:focus {
 	-webkit-font-smoothing: antialiased;
 	padding: 0;
 	margin: 0;	
+	text-align: right;
 }
 .head-title h2{
 	text-align: center;
