@@ -1173,6 +1173,7 @@ acronym{
 	padding-top: 50px;
 	padding-bottom: 50px;
 	direction: rtl;
+	min-height: 200px;
 }
 .f-inner:hover{
 	background-color: #d0ad55;

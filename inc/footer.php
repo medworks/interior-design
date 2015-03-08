@@ -8,7 +8,7 @@
                 <!-- About Us Information -->
                 <div class="col-md-3 col-sm-6">                           
                     <div class="f-logo">
-                        <h2>دفاتر ما</h2>                                                                    
+                        <h2>راهای ارتباط با ما</h2>                                                                    
                     </div>
                 </div>
                 
@@ -18,12 +18,10 @@
                         <i class="fa fa-map-marker fa-lg"></i> 
                     </div>
                     <div class="col-sm-10">
-                        <strong>مشهد</strong>
+                        <strong>آدرس</strong>
                         <div class="f-space"></div>
                         <address>                                
-                            سه راه فلسطین ساختمان 202<br>                                
-                            <abbr title="Phone"></abbr><span style="direction:ltr;display:inline-block"> (513) 766-6436<span><br />
-                            info@mediateq.ir
+                            مشهد، سه راه فلسطین، ساختمان 202، طبقه اول، واحد3
                         </address>                           
                     </div>
                 </div>
@@ -31,15 +29,13 @@
                 <!-- Latest Tweet -->
                 <div class="col-md-3 col-sm-6 f-inner f-inner-black">
                     <div class="col-sm-2">
-                        <i class="fa fa-map-marker fa-lg"></i> 
+                        <i class="fa fa-phone fa-lg"></i> 
                     </div>
                     <div class="col-sm-10">
-                        <strong>مشهد</strong>
+                        <strong>تلفن</strong>
                         <div class="f-space"></div>
-                        <address>                                
-                            سه راه فلسطین ساختمان 202<br>                                
-                            <abbr title="Phone"></abbr><span style="direction:ltr;display:inline-block"> (513) 766-6436<span><br />
-                            info@mediateq.ir
+                        <address style="direction:ltr;text-align:right">                                
+                            (513) 766-6436
                         </address>    
                     </div>
                 </div>
@@ -47,14 +43,12 @@
                 <!-- Recent Works -->
                 <div class="col-md-3 col-sm-6 f-inner f-inner-black">   
                     <div class="col-sm-2">
-                        <i class="fa fa-map-marker fa-lg"></i> 
+                        <i class="fa fa-envelope fa-lg"></i> 
                     </div>
                     <div class="col-sm-10">
-                        <strong>مشهد</strong>
+                        <strong>ایمیل</strong>
                         <div class="f-space"></div>
-                        <address>                                
-                            سه راه فلسطین ساختمان 202<br>                                
-                            <abbr title="Phone"></abbr><span style="direction:ltr;display:inline-block"> (513) 766-6436<span><br />
+                        <address> 
                             info@mediateq.ir
                         </address>    
                     </div>      
@@ -65,19 +59,19 @@
     </div>   
 
     <div id="footer">
-        <div class="container">   
+        <div class="container" style="margin:0">   
             <div class="row">                                                         
                 <!-- Copyright -->                                                       
                 <div class="col-sm-6 col-md-6 f-copyright">                        
-                    <span>© Copyright Mediateq.ir - All Rights Reserved</span>                        
+                    <span>© Copyright Parsa MDF - All Rights Reserved - Design by Mediateq.ir</span>                        
                 </div>                      
                 <div class="col-sm-6 col-md-6">
                     <!-- Social Icons -->                              
                     <ul class="footer-social footer-social-black">
                         <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
                         <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-skype fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x fa-inverse"></i></span></a></li>
                     </ul>
                 </div>
             </div><!-- /row -->

@@ -430,7 +430,7 @@ $html2=<<<cd
     <div id="map-canvas"></div>
     <!-- End Google Map -->
     <div class="f-action" id="contactus">
-        <a href="#" class="f-cta f-cta-black" data-toggle="modal" data-target="#myModal">تماس با ما</a>
+        <a href="#" class="f-cta f-cta-black" data-toggle="modal" data-target="#myModal">برای تماس با ما کلیک نمایید</a>
     </div>
             
     <!-- Modal -->
