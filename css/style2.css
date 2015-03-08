@@ -49,7 +49,7 @@ Table of Contents:
 	text-transform: uppercase;
 	font-family: 'yekan', sans-serif;
 	font-weight: 700;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 	border: 2px solid transparent;
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
@@ -250,7 +250,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .dropdown-menu>li>a {
 	font-family: 'yekan', sans-serif;
 	text-transform: uppercase;	
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
 	display: block;
 	padding: 9px 20px;
 	clear: both;
@@ -370,7 +370,7 @@ a:focus {
 	font-size: 30px;
 	line-height: 31px;
 	font-weight: 300;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 	color: #696969;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
@@ -383,7 +383,7 @@ a:focus {
 	font-size: 30px;
 	line-height: 31px;
 	font-weight: 300;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 	color: #fff;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
@@ -558,7 +558,7 @@ a:focus {
 	background-size: cover;					
 }
 #projects_bg{	
-	background: url('../img/header_bg/image3.jpg') 50% 0 no-repeat fixed;
+	background: url('../images/project-header.jpg') 50% 0 no-repeat fixed;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	background-size: cover;	
@@ -603,20 +603,20 @@ a:focus {
 	font-family: 'yekan', sans-serif;
 	font-size: 22px;
 	font-weight: 300;
-	letter-spacing: 5px;
+	/*letter-spacing: 5px;*/
 }
 .price-table h1{
 	text-transform: uppercase;
 	margin: 0;
 	font-family: 'yekan', sans-serif;
 	font-weight: 700;
-	letter-spacing: 5px;
+	/*letter-spacing: 5px;*/
 }
 .price-table small{
 	text-transform: uppercase;
 	font-family: 'yekan', sans-serif;
 	font-weight: 500;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 }
 .price-table p{
 	color: #999;
@@ -674,7 +674,7 @@ a:focus {
 	margin-bottom: 13px;
 	line-height: 20px;
 	font-size: 17px;
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -682,7 +682,7 @@ a:focus {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 29px;
-	letter-spacing: 0px;
+	/*letter-spacing: 0px;*/
 	text-transform: none;
 	color: #333;
 	margin: 0;
@@ -1057,7 +1057,7 @@ ul.contact-social{
 	text-transform: uppercase;
 	font-family: 'yekan', sans-serif;
 	font-weight: 400;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 	width: 185px;
 	margin: 15px 0px;
 	padding: 12.9px;	
@@ -1263,7 +1263,7 @@ ul.footer-social{
 	font-size: 30px;
 	line-height: 31px;
 	font-weight: 300;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 	color: #333;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
@@ -1275,7 +1275,7 @@ ul.footer-social{
 	font-size: 30px;
 	line-height: 31px;
 	font-weight: 300;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 	color: #fff;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
@@ -1366,7 +1366,7 @@ ul.footer-social{
 	font-size: 52px;
 	font-weight: 300;
 	line-height: 56px;
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
 	text-transform: none;
 }
 .tp-loader.spinner0{
@@ -1530,7 +1530,7 @@ a:focus {
 .main-title h1{	
 	font-size: 210px;
 	font-weight: 600;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 	color: #d0ad55;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
@@ -1599,7 +1599,7 @@ a:focus {
 	font-size: 36px;
 	line-height: 31px;
 	font-weight: 300;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 	color: #d0ad55;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
@@ -1615,7 +1615,7 @@ a:focus {
 	font-size: 46px;
 	line-height: 31px;
 	font-weight: 300;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 	color: #333;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;

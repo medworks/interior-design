@@ -1,44 +1,4 @@
-<div class="f-action" id="contactus">
-        <a href="#" class="f-cta f-cta-black" data-toggle="modal" data-target="#myModal">تماس با ما</a>
-    </div>
-            
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content text-center">
-                <div class="modal-header">
-                    <button type="button" class="close close-black" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">بستن</span></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Contact Form (name, email, phone and message inputs for your email form "should change your email adress in contact.php file") -->     
-                    <div id="contact">                            
-                        <div id="message"></div>
-                        <form method="post" action="" name="contactform" id="contactform">
-                            <fieldset>
-                                <div class="col-md-12">
-                                    <!-- Name -->
-                                    <input kl_virtual_keyboard_secure_input="on" name="name" id="name" size="30" value="" placeholder="نام" type="text">
-                                    <br>
-                                    <!-- Email -->
-                                    <input kl_virtual_keyboard_secure_input="on" name="email" id="email" size="30" value="" placeholder="ایمیل" type="text">
-                                    <br> 
-                                    <!-- Phone -->
-                                    <input kl_virtual_keyboard_secure_input="on" name="phone" id="phone" size="30" value="" placeholder="تلفن" type="text">
-
-                                    <!-- Message -->                                                                        
-                                    <textarea name="comments" cols="40" rows="5" id="comments" placeholder="پیام"></textarea>
-                                     
-                                    <!-- Submit Button -->                                        
-                                    <button type="submit" class="btn black-btn blog-btn submit" id="submit" value="Submit">ارسال</button>
-                                </div>                                                                                                                                                             
-                            </fieldset>
-                        </form>                            
-                    </div>          
-                    <!-- End Contact Form -->
-                </div>                    
-            </div>
-        </div>
-    </div>     
+     
         
     <!-- Footer -->  
     <div class="footer-big">

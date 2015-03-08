@@ -52,54 +52,9 @@ $html.=<<<cd
 
         </div>                    
     </div>         
-    <!-- End Slider -->       
-
-    <!-- Navbar -->   
-    <div id="header" class="header">            
-        <nav class="navbar navbar-default navbar-static header-nav header-nav-black" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Logo -->        
-                    <a class="navbar-brand" href="#home">جایگاه برند</a>        
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#home">صفحه اصلی</a></li>
-                        <li><a href="#about">درباره ما</a></li>                                                                            
-                        <li><a href="#projects">نمونه کارها</a></li>                    
-                        <li><a href="#services">خدمات</a></li>
-                        <li><a href="#blog">مقالات</a></li>     
-                        <!-- <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages <i class="fa fa-angle-down fa-lg"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="onepage_dark.html">One Page Dark</a></li>
-                                <li><a href="onepage_slider.html">One Page Slider</a></li>
-                                <li><a href="onepage_video.html">One Page Video</a></li>
-                                <li><a href="onepage_nav_bottom.html">One Page Bottom Nav</a></li>
-                                <li><a href="onepage-canvas.html">One Page Off-Canvas</a></li>
-                                <li><a href="index-m.html">Multi-Page</a></li>
-                                <li class="divider"></li>
-                                <li><a href="shortcodes.html">Shortcodes</a></li>    
-                                <li><a href="404_page.html">404 Error</a></li>                                    
-                                <li><a href="coming_soon.html">Coming Soon</a></li>                                    
-                            </ul>
-                        </li> -->                      
-                        <li><a href="#contactus">تماس با ما</a></li>  
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>            
-    </div>         
-    <!-- Navbar -->             
-
+    <!-- End Slider -->
+cd;
+$html2=<<<cd
     <!-- Site Wrapper -->
     <div class="site-wrapper" id="about">
 
@@ -554,9 +509,52 @@ $html.=<<<cd
 
     <!-- Google Map (adress on map can be changed in app.js file) -->
     <div id="map-canvas"></div>
-    <!-- End Google Map -->                         
+    <!-- End Google Map -->
+    <div class="f-action" id="contactus">
+        <a href="#" class="f-cta f-cta-black" data-toggle="modal" data-target="#myModal">تماس با ما</a>
+    </div>
+            
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <button type="button" class="close close-black" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">بستن</span></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contact Form (name, email, phone and message inputs for your email form "should change your email adress in contact.php file") -->     
+                    <div id="contact">                            
+                        <div id="message"></div>
+                        <form method="post" action="" name="contactform" id="contactform">
+                            <fieldset>
+                                <div class="col-md-12">
+                                    <!-- Name -->
+                                    <input kl_virtual_keyboard_secure_input="on" name="name" id="name" size="30" value="" placeholder="نام" type="text">
+                                    <br>
+                                    <!-- Email -->
+                                    <input kl_virtual_keyboard_secure_input="on" name="email" id="email" size="30" value="" placeholder="ایمیل" type="text">
+                                    <br> 
+                                    <!-- Phone -->
+                                    <input kl_virtual_keyboard_secure_input="on" name="phone" id="phone" size="30" value="" placeholder="تلفن" type="text">
+
+                                    <!-- Message -->                                                                        
+                                    <textarea name="comments" cols="40" rows="5" id="comments" placeholder="پیام"></textarea>
+                                     
+                                    <!-- Submit Button -->                                        
+                                    <button type="submit" class="btn black-btn blog-btn submit" id="submit" value="Submit">ارسال</button>
+                                </div>                                                                                                                                                             
+                            </fieldset>
+                        </form>                            
+                    </div>          
+                    <!-- End Contact Form -->
+                </div>                    
+            </div>
+        </div>
+    </div>                         
 cd;
 	include_once('./inc/header.php');
 	echo $html;
+    include_once('./inc/menu.php');
+    echo $html2;
     include_once('./inc/footer.php');
 ?>    
