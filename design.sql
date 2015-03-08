@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2015 at 05:35 PM
+-- Generation Time: Mar 08, 2015 at 05:20 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -23,6 +23,65 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `articles`
+--
+
+CREATE TABLE IF NOT EXISTS `articles` (
+`id` int(11) NOT NULL,
+  `subject` varchar(100) NOT NULL,
+  `body` text NOT NULL,
+  `regdate` datetime NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `articles`
+--
+
+INSERT INTO `articles` (`id`, `subject`, `body`, `regdate`) VALUES
+(1, '    تست مطلب', '<p>تست مطالب&nbsp;برای افتتاحیه&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2015-03-08 14:59:48');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `categories`
+--
+
+CREATE TABLE IF NOT EXISTS `categories` (
+`id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`id`, `name`) VALUES
+(3, 'کابینت'),
+(4, 'میز تلوزیون'),
+(5, 'کمد');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pics`
+--
+
+CREATE TABLE IF NOT EXISTS `pics` (
+`id` int(11) NOT NULL,
+  `idd` int(11) NOT NULL,
+  `img` varchar(100) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `pics`
+--
+
+INSERT INTO `pics` (`id`, `idd`, `img`) VALUES
+(1, 1, 'articlepics/thumb2.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `settings`
 --
 
@@ -38,28 +97,28 @@ CREATE TABLE IF NOT EXISTS `settings` (
 
 INSERT INTO `settings` (`id`, `key`, `value`) VALUES
 (1, 'Site_Theme_Name', 'default'),
-(2, 'About_System', 'گروه بازرگانی ایرانا با هدف ارائه رهيافت‌های جامع و خدمات تخصصی در زمينه شبكه های رايانه ای ، طراحی سایت ، اعطاء نمایندگی پیشرفته ترین پنل ارسال اس ام اس ، ارائه امنیت شبکه ، ويدئو کنفرانس Polycom ،  بر مبنای متدولوژی‌های نوين انفورماتيك در سال 1388 تأسيس شد. مبنای فعاليت شركت  بر پايه استفاده از متخصصين مجرب و تجهيزات مدرن در انجام پروژه‌های  كامپيوتری استوار است و بر همين اساس با دريافت نمايندگی رسمی از شركتهای معتبر توليد كننده تجهيزات ، به تدريج در سالهاي اوليه فعاليت خود، به پايگاهی مطمئن در ارائه محصولات معتبر و متنوع شبكه های كامپيوتری تبديل گرديد.\r\nهمچنين با عنايت به اعتقاد مديريت شركت مبنی بر استفاده از نيروهای متخصص، كليه كارشناسان اين شركت  در واحدهای فنی  و مهندسی فروش موفق به دريافت مدارك بین المللی مرتبط با راهکارهای مورد استفاده گردیده اند.\r\nگروه بازرگانی ایرانا در سال 1389 با دریافت نمایندگی رسمی فروش، تمدید و شارژ اینترنت مخابرات بر آن شد تا تمام نیاز های مشترکین مخابرات در این حوزه را برآورده نماید که ارتباط ، پاسخ سریع و ارائه راهکارهای نوین گویای این مطلب میباشد.'),
-(3, 'Site_Title', 'گروه بازرگانی ایرانا'),
-(4, 'Site_KeyWords', 'اینترنت,مخابرات,صبانت,مودم،اس ام اس،رایگان،تخفیف،پول،شارژ،2020،ir،www.ir2020.ir ،شارژ اینترنت مخابرات خراسان رضوی،'),
-(5, 'Site_Describtion', 'گروه بازرگانی ایرانا نماینده رسمی تمدید و ثبت محصولات اینترنت مخابرات'),
-(6, 'Admin_Email', 'admin@mediateq.ir'),
-(7, 'News_Email', 'news@mediateq.ir'),
-(8, 'Contact_Email', 'info@ir2020.ir'),
+(2, 'About_System', '<p>صنایع ام دی اف پارسا مفتخر است تا ایده آل شما را با کمترین هزینه و بیشترین کیفیت و رضایتمندی خلق نماید</p>\r\n'),
+(3, 'Site_Title', 'صنایع ام دی اف پارسا'),
+(4, 'Site_KeyWords', 'چوب ، کابینت ، ام دی اف ، کمد ، های گلاس ، ملامینه ، میز تلوزیون'),
+(5, 'Site_Describtion', 'صنایع ام دی اف پارسا مفتخراست  تا ایده آل شما را خلق کند'),
+(6, 'Admin_Email', 'admin@parsami.com'),
+(7, 'News_Email', 'news@parsami.com'),
+(8, 'Contact_Email', 'info@parsami.com'),
 (9, 'Max_Page_Number', '5'),
 (10, 'Max_Post_Number', '3'),
 (11, 'FaceBook_Add', 'facebook.com'),
 (12, 'Twitter_Add', 'twitter.com'),
 (13, 'Rss_Add', '127.0.01/media/rssfeed.php'),
 (14, 'YouTube_Add', 'youtube.com'),
-(15, 'Tell_Number', '38555560'),
-(16, 'Fax_Number', '38555560'),
-(17, 'Address', 'مشهد- چهارراه لشکر-مجتمع تجاری اداری آسیا-واحد203\r\n'),
+(15, 'Tell_Number', ''),
+(16, 'Fax_Number', ''),
+(17, 'Address', 'مشهد- '),
 (18, 'Is_Smtp_Active', 'yes'),
 (19, 'Smtp_Host', 'smtp.gmail.com'),
 (20, 'Smtp_User_Name', 'hatami4510@gmail.com'),
 (21, 'Smtp_Pass_Word', '12345'),
 (22, 'Smtp_Port', '465'),
-(23, 'Email_Sender_Name', 'گروه مدیاتک'),
+(23, 'Email_Sender_Name', 'صنایع ام دی اف پارسا'),
 (24, 'WellCome_Title', ''),
 (25, 'WellCome_Body', ''),
 (26, 'Gplus_Add', 'www.googleplus.com'),
@@ -127,6 +186,24 @@ INSERT INTO `users` (`id`, `name`, `family`, `image`, `email`, `username`, `pass
 --
 
 --
+-- Indexes for table `articles`
+--
+ALTER TABLE `articles`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `categories`
+--
+ALTER TABLE `categories`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pics`
+--
+ALTER TABLE `pics`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `settings`
 --
 ALTER TABLE `settings`
@@ -148,6 +225,21 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `articles`
+--
+ALTER TABLE `articles`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `pics`
+--
+ALTER TABLE `pics`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `settings`
 --
