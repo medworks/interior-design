@@ -19,7 +19,6 @@
                         <li class="active"><a href="index.php#home">صفحه اصلی</a></li>
                         <li><a href="index.php#about">درباره ما</a></li>                                                                            
                         <li><a href="index.php#projects">نمونه کارها</a></li>                    
-                        <li><a href="index.php#services">خدمات</a></li>
                         <li><a href="index.php#blog">مقالات</a></li>     
                         <!-- <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages <i class="fa fa-angle-down fa-lg"></i></a>
