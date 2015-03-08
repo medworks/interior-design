@@ -18,7 +18,7 @@
   
   	function uploadpics($mode,$fileup,$db,$subject,$body,$id=0)
 	{
-		$target_dir = "../slides/";
+		$target_dir = "slides/";
 		$imageFileType = pathinfo($_FILES[$fileup]["name"],PATHINFO_EXTENSION);
 		//$target_file = $target_dir . basename($_FILES[$fileup]["name"]);
 	/* 	if (!isset($filename))
@@ -29,7 +29,7 @@
 		{
 			$target_file = $target_dir .$filename.".".$imageFileType;
 		} */
-		$target_file = $target_dir . basename($_FILES[$fileup]["name"]);
+		$target_file = "../".$target_dir . basename($_FILES[$fileup]["name"]);
 		$uploadOk = 1;
 		
 		
@@ -83,7 +83,7 @@
 						unlink($pic["image"]);
 					}
 					$db->Delete("slides"," id",$id);	
-					$fn = $target_file;//$filename.".".$imageFileType;
+					$fn = $target_dir . basename($_FILES[$fileup]["name"]);
 					$fields = array("`subject`","`body`","`image`");				
 					$values = array("'{$subject}'","'{$body}'","'{$fn}'");					
 					$db->InsertQuery('slides',$fields,$values);
@@ -100,7 +100,7 @@
 					
 					if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
 					{	
-						$fn = $target_file;//$filename.".".$imageFileType;
+						$fn = $target_dir . basename($_FILES[$fileup]["name"]);
 						$fields = array("`subject`","`body`","`image`");				
 						$values = array("'{$subject}'","{$body}","'{$fn}'");
 						$db->InsertQuery('slides',$fields,$values);
