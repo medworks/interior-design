@@ -11,7 +11,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- Logo -->        
-                    <a class="navbar-brand" href="#home">صنایع ام دی اف پارسا</a>        
+                    <a class="navbar-brand" href="./">صنایع ام دی اف پارسا</a>        
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
