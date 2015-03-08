@@ -172,8 +172,8 @@
                     <span>ورود کارها</span>
                 </a>
                 <ul>
-                    <li><a href="dataentry.php?act=new">ثبت کار</a></li>
-                    <li><a href="editdata.php?act=edit">ویرایش کار</a></li>
+                    <li><a href="addwork.php?act=new">ثبت کار</a></li>
+                    <li><a href="editwork.php?act=edit">ویرایش کار</a></li>
                 </ul>
             </li>
              <li>
