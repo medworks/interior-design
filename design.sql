@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.11
+-- version 4.1.6
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2015 at 05:20 PM
--- Server version: 5.6.21
--- PHP Version: 5.6.3
+-- Generation Time: Mar 08, 2015 at 08:43 PM
+-- Server version: 5.6.16
+-- PHP Version: 5.5.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -27,18 +27,20 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `articles` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `subject` varchar(100) NOT NULL,
   `body` text NOT NULL,
-  `regdate` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `regdate` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `articles`
 --
 
 INSERT INTO `articles` (`id`, `subject`, `body`, `regdate`) VALUES
-(1, '    تست مطلب', '<p>تست مطالب&nbsp;برای افتتاحیه&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2015-03-08 14:59:48');
+(1, '    تست مطلب', '<p>تست مطالب&nbsp;برای افتتاحیه&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2015-03-08 14:59:48'),
+(2, ' انواع چوب', '<p><span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">چوب سخت</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">عموماً چوبهاي سخت به خوبي و به آرامي ميسوزند و ذغالهاي بادوامي را به جا ميگذارند. درختهاي آنها پهن برگ هستند. برگ اکثر آنها در پاييز مي ريزد. چوبهاي سخت لزوماً هميشه محکمتر و مقاومتر از چوبهاي نرم نيستند.</span><br />\r\n<br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">چوب نرم</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">آتش توليد شده آنها داراي حرارت زيادي است ولي عمر کوتاه دارد. اين درختها برگهاي سوزني دارند. اکثراً هميشه سبز هستند (در پاييز برگهايشان نمي ريزد)، البته غير از انواع کاج اروپايي، سرو و سياه کاج با ميوه هاي مخروطي شکل.</span><br />\r\n<br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">چوب مناسب آتش</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">بايد از موارد زير اطلاع حاصل کنيد:</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">حرارت توليدي انواع مختلفي از چوبها هر چوب سبز و تازه چگونه ميسوزد؟</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">ذغال کداميک بادوام بوده و چه چوبي سريعاً به خاکستر تبديل ميشود؟</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">آتش گرفتن چه چوبي با جرقه همراه است؟</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">اين امر ميتواند باعث سوراخ شدن کيسه خواب، لباسها و چادر شده و يا منجر به آتش سوزي در جنگل شود.</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">درجه سختي انواع چوب در ايجاد برش درجه سهولت و سرعت در آتش گرفتن.</span><br />\r\n<br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">خشکاندن چوب</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">از قطعه قطعه کردن يک درخت سبز و زنده چوب سبز بدست مي آيد. يعني هنوز شيره گياهي در سلولهاي آنها وجود دارد. و وقتي که اين چوبها خشک ميشوند به آنها کنده گفته ميشود که اين نوع چوب معمولاً آتش بهتري ايجاد ميکند. زمان خشک شدن چوب هر درخت به سن درخت هنگام قطع شدن (درختان پيرتر شيره کمتري دارند)، فصل بريده شدن و آب و هواي منطقه رشد درخت بستگي دارد. مدت زمان متوسط براي خشکاندن چوب درختان سيب، بلوط و گردوي آمريکايي تقريباً يک سال و (زير تابش نور خورشيد تنها چند ماه) ميباشد.</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">چوب سبز: اين چوبها هنوز خشک نشده اند. همه چوبها خاصيت خشک شدن را ندارند پس نميتوان از آنها به عنوان سوخت استفاده کرد. از چوبهاي سبز ميتوان به عنوان بازتابنده و يا محافظ ظروف استفاده کرد.</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">چوب خشک: انقباض سبب ميشود اين چوبها از مرکز دچار ترک خوردگي شوند ولي اين مسئله به اين معني نيست که الزاماً راحت تر تکه تکه ميشوند. خاصيت تکه تکه شدن هر چوب به مشخصات آن برمي گردد.</span><br />\r\n<br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">چرا چوب مي&zwnj;سوزد؟ ... تغييرات شيميايي</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">براي اينکه مقادير مختلف چوب بسوزد به ميزان کافي اکسيژن و حرارت کافي نياز هست. درصورت فقدان يکي از اين عوامل چوب آتش نخواهد گرفت. ميزان اکسيژن مورد نياز و دماي مورد نياز بنا به نوع چوب متغير است. تغيير و تحولات شيميايي در داخل چوب، در غياب اکسيژن و با درجه حرارت بالا اتفاق مي افتد که درنتيجه چوب شکسته شده، گازهايي آزاد ميشوند که باعث آتش گرفتن بيشتر چوب ميشود. هرچه درجه حرارت بيشتر باشد ميزان گازهاي توليدي بيشتر است.</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">چوبهايي که به آتش اضافه ميشوند، قبل از آتش گرفتن به دماي 282 سانتي&zwnj;گراد مي&zwnj;رسند. درعين حال تحولات دروني شيميايي گازهاي ذکر شده را آزاد کرده و درنتيجه چوبها آتش ميگيرند. گازها براي سوختن اکسيژن کافي و درجه حرارت 537 درجه سانتي&zwnj;گراد. يک جرقه براي شعله ور شدن اين گازها کافيست.</span><br />\r\n<br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">ذغال سنگ</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">ذغال سنگ انباشته اي از باقيمانده گياهان است که هزاران سال در باتلاقها و لجنزارها روي هم جمع شده اند. کمبود اکسيژن مانع تجزيه کامل باقيمانده گياهان ميشود. ذغال سنگ را ميتوان با تراشيدن، مانند قالبهاي برفي، از زمين جدا نمود. در طول زمان استخراج (برداشت ذغال سنگ) به سرعت خشک شده و قابل استفاده ميشود. در مناطق مختلف دردسترس است. از آن براي ساختن آتش، به خصوص در زمانهاي گذشته، استفاده ميکردند.</span><br />\r\n<br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">انتخاب صحيح چوب</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">مشخصات درختان مختلف جهت درست کردن آتش</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">نوع مثال مشخصات ويژه</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">چوبهاي نرم وقتي که خوب خشک شوند به عنوان سوخت براي پخت و پز استفاده ميشوند. به راحتي مي شکنند و خراش برميدارند و زود آتش ميگيرند. چوبهايي که کنار نهرها و رودها ميرويند از اين دسته هستند. پس از چوبهاي شناوري که از آب ميگيريم ميتوان به عنوان سوخت استفاده کرد.</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">چوبهاي نرم کاج سفيد، به سرعت آتش گرفته و سريع خاموش ميشوند.</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">صنوبر، لاله درختي</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">کاجها به خاطر چوب سختي که دارند به عنوان سوخت مورد استفاده قرار ميگيرند درصورت خشک بودن مناسب اند.</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">سياه کاج</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">انواع کاج ميلاد يک سوخت ضعيف است و از آن به عنوان آتش گير استفاده ميشود، شعله اوليه آن براي درست کردن آتش مناسب است.</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">انواع کاج سياه وقتي که خشک هستند بسيار زود آتش ميگيرند، ولي موقعي که خيس هستند به سختي آتش ميگيرند.</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">انواع کاج زرد خوب ميسوزند چون شيره داخلي آنها به جاي اينکه مايع باشد حالت صمغي دارد.</span><br />\r\n<span style="background-color:rgb(245, 245, 245); color:rgb(40, 48, 51); font-family:tahoma; font-size:10.6666669845581px">بلوط قرمز براي سوخت بايد از تکه هاي کوچک آن استفاده کرد.</span><br />\r\n&nbsp;</p>\r\n', '2015-03-08 19:58:32');
 
 -- --------------------------------------------------------
 
@@ -47,9 +49,10 @@ INSERT INTO `articles` (`id`, `subject`, `body`, `regdate`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `categories` (
-`id` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `categories`
@@ -67,17 +70,19 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `pics` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `idd` int(11) NOT NULL,
-  `img` varchar(100) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `img` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `pics`
 --
 
 INSERT INTO `pics` (`id`, `idd`, `img`) VALUES
-(1, 1, 'articlepics/thumb2.jpg');
+(1, 1, 'articlepics/thumb2.jpg'),
+(2, 2, 'articlepics/8.jpg');
 
 -- --------------------------------------------------------
 
@@ -86,10 +91,11 @@ INSERT INTO `pics` (`id`, `idd`, `img`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `settings` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `key` varchar(30) NOT NULL,
-  `value` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
+  `value` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=38 ;
 
 --
 -- Dumping data for table `settings`
@@ -97,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `settings` (
 
 INSERT INTO `settings` (`id`, `key`, `value`) VALUES
 (1, 'Site_Theme_Name', 'default'),
-(2, 'About_System', '<p>صنایع ام دی اف پارسا مفتخر است تا ایده آل شما را با کمترین هزینه و بیشترین کیفیت و رضایتمندی خلق نماید</p>\r\n'),
+(2, 'About_System', '<p>صنایع ام دی اف پارسا مفتخر است تا ایده آل شما را با کمترین هزینه و بیشترین کیفیت و رضایتمندی خلق نماید <br/>صنایع ام دی اف پارسا مفتخر است تا ایده آل شما را با کمترین هزینه و بیشترین کیفیت و رضایتمندی خلق نماید<br/>صنایع ام دی اف پارسا مفتخر است تا ایده آل شما را با کمترین هزینه و بیشترین کیفیت و رضایتمندی خلق نماید</p>\n'),
 (3, 'Site_Title', 'صنایع ام دی اف پارسا'),
 (4, 'Site_KeyWords', 'چوب ، کابینت ، ام دی اف ، کمد ، های گلاس ، ملامینه ، میز تلوزیون'),
 (5, 'Site_Describtion', 'صنایع ام دی اف پارسا مفتخراست  تا ایده آل شما را خلق کند'),
@@ -141,12 +147,13 @@ INSERT INTO `settings` (`id`, `key`, `value`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `slides` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `image` varchar(60) NOT NULL,
   `subject` varchar(50) NOT NULL,
   `body` varchar(250) NOT NULL,
-  `pos` tinyint(4) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+  `pos` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `slides`
@@ -164,15 +171,16 @@ INSERT INTO `slides` (`id`, `image`, `subject`, `body`, `pos`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(30) NOT NULL,
   `family` varchar(50) NOT NULL,
   `image` varchar(60) NOT NULL,
   `email` varchar(30) NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(35) NOT NULL,
-  `type` tinyint(4) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `type` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `users`
@@ -181,80 +189,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`id`, `name`, `family`, `image`, `email`, `username`, `password`, `type`) VALUES
 (1, 'Media', 'Teq', '', 'admin@mediateq.ir', 'php', '5f93f983524def3dca464469d2cf9f3e', 0);
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `articles`
---
-ALTER TABLE `articles`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `categories`
---
-ALTER TABLE `categories`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `pics`
---
-ALTER TABLE `pics`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `settings`
---
-ALTER TABLE `settings`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `slides`
---
-ALTER TABLE `slides`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
- ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `articles`
---
-ALTER TABLE `articles`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `categories`
---
-ALTER TABLE `categories`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
---
--- AUTO_INCREMENT for table `pics`
---
-ALTER TABLE `pics`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `settings`
---
-ALTER TABLE `settings`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=38;
---
--- AUTO_INCREMENT for table `slides`
---
-ALTER TABLE `slides`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
