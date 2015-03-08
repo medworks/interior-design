@@ -19,7 +19,7 @@ else
 	{
 		if ($login->AdminLogin($_POST['username'],$_POST['password']))
 		{		 
-			header("location:regfaq.php");	
+			header("location:admin.php");	
 		}	
 		else
 		{ 

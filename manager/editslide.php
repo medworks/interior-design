@@ -92,9 +92,6 @@ $rownumber = $i+1;
 $rows[$i]["subject"] =(mb_strlen($rows[$i]["subject"])>20)?mb_substr($rows[$i]["subject"],0,20,"UTF-8")."...":$rows[$i]["subject"];
 $rows[$i]["text"] =(mb_strlen($rows[$i]["text"])>20)?mb_substr($rows[$i]["text"],0,20,"UTF-8")."...":$rows[$i]["text"];
 
-$img = base64_encode($rows[$i]['img']);
-$src = 'data: '.$rows[$i]['itype'].';base64,'.$img;
-
 $html.=<<<cd
 
                                                 
@@ -103,7 +100,7 @@ $html.=<<<cd
                                                 <td>{$rows[$i]["subject"]}</td>
                                                 <td>{$rows[$i]["text"]}</td>
                                                 <td>
-                                                    <img src="{$src}" width="50px" height="50px" /> 
+                                                    <img src="../{$rows[$i][image]}" width="50px" height="50px" /> 
                                                 </td>
                                                 <td class="text-center">
 												<a href="?act=del&did={$rows[$i]["id"]}"  >												
