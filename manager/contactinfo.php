@@ -78,6 +78,7 @@ $html.=<<<cd
                                             </div>
                                         </div>
                                     </div>
+									<!--
 									<div class="row ls_divider">
                                         <div class="form-group">
                                             <label class="col-md-2 control-label">آدرس ایمیل خبرنامه</label>
@@ -86,6 +87,7 @@ $html.=<<<cd
                                             </div>
                                         </div>
                                     </div>
+									-->
 									<div class="row ls_divider">
                                         <div class="form-group">
                                             <label class="col-md-2 control-label">اسم ارسال کننده</label>
@@ -115,7 +117,7 @@ $html.=<<<cd
                                     </div>
                                     <div class="row ls_divider">
                                         <div class="form-group">
-                                            <label class="col-md-2 control-label">تلفن کلینیک</label>
+                                            <label class="col-md-2 control-label">تلفن شرکت</label>
                                             <div class="col-md-10">
                                                 <input type="text" class="form-control" name="Tell_Number" value="{$Tell_Number}" />
                                             </div>
@@ -123,7 +125,7 @@ $html.=<<<cd
                                     </div>
                                     <div class="row ls_divider">
                                         <div class="form-group">
-                                            <label class="col-md-2 control-label">تلفن کلینیک 2</label>
+                                            <label class="col-md-2 control-label">تلفن دوم شرکت</label>
                                             <div class="col-md-10">
                                                 <input type="text" class="form-control" name="Fax_Number" value="{$Fax_Number}" />
                                             </div>
@@ -131,7 +133,7 @@ $html.=<<<cd
                                     </div>
                                     <div class="row ls_divider">
                                         <div class="form-group">
-                                            <label class="col-md-2 control-label">آدرس کلینیک</label>
+                                            <label class="col-md-2 control-label">آدرس شرکت</label>
                                             <div class="col-md-10">
                                                 <input type="text" class="form-control" name="Address" value="{$Address}"/>
                                             </div>
