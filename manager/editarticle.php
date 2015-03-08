@@ -19,7 +19,7 @@
 	$db = Database::GetDatabase(); 
 	if ($_GET['act']=="del")
 	{
-		$db->Delete("topics"," id",$_GET["did"]);		
+		$db->Delete("articles"," id",$_GET["did"]);		
 		header('location:editarticle.php?act=new');	
 	}		
     
@@ -60,7 +60,7 @@ $html.=<<<cd
 											<th>#</th>
                                                 <th>عنوان</th>
                                                 <th>متن</th>
-                                                <th>منو و زیر منو</th>
+                                                <th>عکس</th>
                                                 <th class="text-center">عملیات</th>
                                             </tr>
                                             </thead>
@@ -72,13 +72,13 @@ cd;
 
 	$pagination->navigation_position("right");
 
-	$reccount = $db->CountAll("topics");
+	$reccount = $db->CountAll("articles");
 	$pagination->records($reccount); 
 	
     $pagination->records_per_page($records_per_page);	
 
 $rows = $db->SelectAll(
-				"topics",
+				"articles",
 				"*",
 				NULL,
 				"id ASC",
@@ -90,42 +90,17 @@ $vals = array();
 for($i = 0; $i < Count($rows); $i++)
 {
 $rownumber = $i+1;
-$rows[$i]["subject"] =(mb_strlen($rows[$i]["subject"])>20)?mb_substr($rows[$i]["subject"],0,20,"UTF-8")."...":$rows[$i]["subject"];
-$rows[$i]["text"] =(mb_strlen($rows[$i]["text"])>20)?mb_substr($rows[$i]["text"],0,20,"UTF-8")."...":$rows[$i]["text"];
-$vals = "";
-if ($rows[$i]['smid']!=0)
-{
-	$row = $db->Select("submenues","*","id={$rows[$i]['smid']}","id ASC");	
-	$vals[] = $row["name"];
-		
-	while($row["pid"]!=0)
-	{
-		$row = $db->Select("submenues","*","id={$row['pid']}","id ASC");
-		$vals[] = $row["name"];
-	}
-    
-	$row = $db->Select("menues","*","id={$row['mid']}","id ASC");	
-	$vals[] = $row["name"];
-}
-else
-{
-		$row = $db->Select("categories","*","id={$rows[$i]['gid']}","id ASC");	
-		$vals[] = "";
-		$vals[] = "";
-		$vals[] = $row["name"];
-}	
+$rows[$i]["subject"] =(mb_strlen($rows[$i]["subject"])>40)?mb_substr($rows[$i]["subject"],0,40,"UTF-8")."...":$rows[$i]["subject"];
+$rows[$i]["body"] =(mb_strlen($rows[$i]["body"])>50)?mb_substr($rows[$i]["body"],0,50,"UTF-8")."...":$rows[$i]["body"];
+$pic = $db->Select("pics","*","idd = '{$rows[$i][id]}'");
 $html.=<<<cd
 
                                                 
                                             <tr>
                                                 <td>{$rownumber}</td>
                                                 <td>{$rows[$i]["subject"]}</td>
-                                                <td>{$rows[$i]["text"]}</td>
-                                                <td>
-                                                    <span class="label label-success">{$vals[2]}</span>
-                                                    <span class="label label-info">{$vals[1]}</span>
-                                                    <span class="label label-warning">{$vals[0]}</span>                        
-                                                </td>
+                                                <td>{$rows[$i]["body"]}</td>
+												<td><img src="../{$pic["img"]} " width='48px' height='48px' /></td>
                                                 <td class="text-center">
 												<a href="addarticle.php?act=edit&did={$rows[$i]["id"]}"  >					
                                                     <button class="btn btn-xs btn-warning" title="ویرایش"><i class="fa fa-pencil-square-o"></i></button>
