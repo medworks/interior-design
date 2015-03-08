@@ -54,7 +54,8 @@ $html.=<<<cd
     </div>         
     <!-- End Slider -->
 cd;
-$html2=<<<cd
+	$About_System = GetSettingValue('About_System',0);
+$html.=<<<cd
     <!-- Site Wrapper -->
     <div class="site-wrapper" id="about">
 
@@ -68,7 +69,7 @@ $html2=<<<cd
                         <h2>درباره ما</h2>
                         <div class="space-bottom-2x"></div>   
                     </div>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                    <p>{$About_System}</p>
                     <div class="space-bottom-2x"></div>   
                 </div>                            
             </div>                
@@ -337,25 +338,32 @@ $html2=<<<cd
         <!-- End Projects -->            
         
         <!-- End Testimonials -->           
-
-        <!-- From Blog -->
+		
+		<!-- From Blog -->
         <section class="padding-top-x2 padding-bottom" id="blog">
-            <div class="container">
-                <!-- Section General Title -->
+		<div class="container">
+		 <!-- Section General Title -->
                 <div class="general-title general-title-black text-center">
-                    <h2>مقالات</h2>  
+                    <h2>مطالب</h2>  
                     <div class="space-bottom-2x"></div>                       
                 </div>
-                <div class="row">
-                                                                                                                                                                                   
-                    <div id="grid-blog" class="cbp-l-grid-blog">
+				<div class="row">
+				 <div id="grid-blog" class="cbp-l-grid-blog">
                         <ul>
+cd;
+	$articles = $db->SelectAll("articles","*",NULL,"regdate Desc","0","2");
+	for($i=0;$i<count($articles);$i++)
+	{
+		$pic = $db->Select("pics","*","idd = '{$articles[$i][id]}'");
+		$articles[$i]["body"] = strip_tags($articles[$i]["body"]);
+		$articles[$i]["body"] =(mb_strlen($articles[$i]["body"])>200)?mb_substr($articles[$i]["body"],0,200,"UTF-8")."...":$articles[$i]["body"];
+$html.=<<<cd
                             <!-- Blog Item -->
                             <li class="cbp-item ideas motion">
                                 <a href="single-article.php" class="cbp-caption">
                                     <!-- Blog Image -->
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="./images/other/blog_1.jpg" alt="">                    
+                                        <img src="./{$pic[img]}" alt="{$articles[$i][subject]}">                    
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
@@ -367,57 +375,16 @@ $html2=<<<cd
                                 </a>
                                 <!-- Blog Information -->
                                 <div class="text-center">
-                                    <a href="single-article.php" class="cbp-l-grid-blog-title">مطلب اول</a>
+                                    <a href="single-article.php" class="cbp-l-grid-blog-title">{$articles[$i]["subject"]}</a>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>                            
+                                <div class="cbp-l-grid-blog-desc">{$articles[$i]["body"]}</div>                            
                             </li>
+cd;
+}
 
-                            <!-- Blog Item -->
-                            <li class="cbp-item house-design decoration">
-                                <a href="single-article.php" class="cbp-caption">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="./images/other/blog_2.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">مشاهده</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="single-article.php" class="cbp-l-grid-blog-title">مطلب دوم</a>
-                                </div>
-                                <div class="cbp-l-grid-blog-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
-                            </li>
-
-                            <!-- Blog Item -->
-                            <li class="cbp-item ideas motion">
-                                <a href="single-article.php" class="cbp-caption">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="./images/other/blog_3.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">مشاهده</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="single-article.php" class="cbp-l-grid-blog-title">مطلب سوم</a>
-                                </div>
-                                <div class="cbp-l-grid-blog-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
-                            </li>
+$html.=<<<cd
                         </ul>
-                    </div>                                                                                                                   
-
+                 </div>
                 </div><!-- /row -->
             </div><!-- /container -->                              
         </section>
