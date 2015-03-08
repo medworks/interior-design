@@ -161,14 +161,10 @@
                 </ul>
             </li> -->            
             <li>
-                <a href="#">
-                    <i class="fa fa-navicon"></i>
-                    <span>دسته بندی منوها</span>
+                <a href="categories.php?act=new">
+                    <i class="fa fa-users"></i>
+                    <span>دسته بندی گروه ها</span>
                 </a>
-                <ul>
-                    <li><a href="menu.php?act=new">تعریف منو</a></li>
-                    <li><a href="submenu.php?act=new">تعریف زیر منو</a></li>
-                </ul>
             </li>
             <li>
                 <a href="#">
@@ -197,8 +193,8 @@
                     <!-- <span class="badge badge-red">New</span> -->
                 </a>
                 <ul>
-                    <li><a href="addnews.php?act=new">ثبت مطلب</a></li>
-                    <li><a href="editnews.php?act=edit">ویرایش مطلب</a></li>
+                    <li><a href="addarticle.php?act=new">ثبت مطلب</a></li>
+                    <li><a href="editarticle.php?act=edit">ویرایش مطلب</a></li>
                 </ul>
             </li>
             <li>
