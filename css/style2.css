@@ -37,6 +37,10 @@ Table of Contents:
   font-weight: normal;
   font-style: normal;
 }
+.container{
+	font-size: 17px;
+	text-align: justify;
+}
 .rtl{
 	direction:rtl;
 }
@@ -134,7 +138,7 @@ Table of Contents:
 }
 .navbar-default .navbar-brand {
 	font-family: 'yekan', sans-serif;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 22px;
 	text-transform: uppercase;
 	text-align: center;
@@ -154,8 +158,8 @@ Table of Contents:
 	color: #333;
 	font-family: 'yekan', sans-serif;
 	text-transform: uppercase;
-	font-size: 16px;
-	font-weight: 700;
+	font-size: 19px;
+	font-weight: 500;
 	/*letter-spacing: 1px;*/
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
@@ -793,7 +797,7 @@ a:focus {
 .cbp-l-filters-alignRight .cbp-filter-item {
 	background-color: #f2f2f2;
 	border: none;
-	font: 400 12px/35px "Open Sans",sans-serif;
+	font: 500 16px "yekan",sans-serif;
 	margin: 0;
 	margin-right: 10px;
 }
