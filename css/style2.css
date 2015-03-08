@@ -1,11 +1,3 @@
-/* ==========================================================================
-	* Template Name: LARX - Interior Design Responsive Template
-	* Description: Interior Design, Architecture, Corporate, and Portfolio Theme.
-	* Version: 1.2
-	* Author: Denis Griu
-	* Website: http://larx.denisgriu.com
-========================================================================== */
-
 /*
 ---------------
 
@@ -35,6 +27,16 @@ Table of Contents:
 /* ----------------------------------------------------
 	1) BOOTSTRAP OVERRIDE
 ------------------------------------------------------- */
+@font-face {
+  font-family: 'yekan';
+  src: url('../fonts/BYekan.eot');
+  src: url('../fonts/BYekan.eot') format('embedded-opentype'),
+       url('../fonts/BYekan.woff') format('woff'),
+       url('../fonts/BYekan.ttf') format('truetype'),
+       url('../fonts/BYekan.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .rtl{
 	direction:rtl;
 }
@@ -45,7 +47,7 @@ Table of Contents:
 	font-size: 12px;
 	line-height: 19px;
 	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 700;
 	letter-spacing: 3px;
 	border: 2px solid transparent;
@@ -131,7 +133,7 @@ Table of Contents:
 	padding: 25px 20px;
 }
 .navbar-default .navbar-brand {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 700;
 	font-size: 22px;
 	text-transform: uppercase;
@@ -150,7 +152,7 @@ Table of Contents:
 }
 .navbar-default .navbar-nav>li>a {
 	color: #333;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 700;
@@ -246,7 +248,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 	box-shadow: none;
 }
 .dropdown-menu>li>a {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	text-transform: uppercase;	
 	letter-spacing: 1px;
 	display: block;
@@ -337,7 +339,7 @@ html {
 body {
 	height: 100%;
 	font-size: 15px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 300;
 	line-height: 22px;
 	color: #4c4c4c;
@@ -364,7 +366,7 @@ a:focus {
 	background-color: #f5f5f5;
 }
 .general-title h2{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 30px;
 	line-height: 31px;
 	font-weight: 300;
@@ -377,7 +379,7 @@ a:focus {
 }
 .head-title h2{
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 30px;
 	line-height: 31px;
 	font-weight: 300;
@@ -389,14 +391,14 @@ a:focus {
 	margin: 0;
 }
 .service-title h3{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 16px;
 	color: #282828;
 	text-transform: uppercase;
 	font-weight: 700;	
 }
 .project-title h3{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 600;	
@@ -598,7 +600,7 @@ a:focus {
 }
 .price-table h3{
 	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 22px;
 	font-weight: 300;
 	letter-spacing: 5px;
@@ -606,13 +608,13 @@ a:focus {
 .price-table h1{
 	text-transform: uppercase;
 	margin: 0;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 700;
 	letter-spacing: 5px;
 }
 .price-table small{
 	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 500;
 	letter-spacing: 3px;
 }
@@ -665,7 +667,7 @@ a:focus {
 	margin: 0;
 }
 .about-caption h3{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	color: #282828;
 	vertical-align: middle;
 	margin: 0;
@@ -733,7 +735,7 @@ a:focus {
 	opacity: 1;
 }
 .project-caption h3{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	text-transform: uppercase;
 	font-weight: 400;
 }
@@ -762,7 +764,7 @@ a:focus {
 	text-transform: uppercase;
 	color: #333;
 	padding-top: 10px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 1.3em;
 	font-weight: 600;
 }
@@ -830,7 +832,7 @@ a:focus {
 	color: #aaaaaa;
 }
 .cbp-l-grid-blog-title {
-	font: 300 18px/28px "Raleway",sans-serif;
+	font: 300 18px/28px "yekan",sans-serif;
 }
 .cbp-l-grid-blog-title:hover {
 	color: #d0ad55;
@@ -843,7 +845,7 @@ a:focus {
 	margin-bottom: 15px;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 30px;
 	line-height: 31px;
 	font-weight: 700;
@@ -872,7 +874,7 @@ a:focus {
 	background-color: #f2f2f2;	
 }
 .t-info b{
-	font-family: 'Raleway', sans-serif;	
+	font-family: 'yekan', sans-serif;	
 	font-weight: 600;
 }
 
@@ -889,7 +891,7 @@ a:focus {
 	padding: 0;
 }
 .blog-inner h3{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 18px;
 	font-weight: 600;	
 }
@@ -973,7 +975,7 @@ a:focus {
 	opacity: 1;
 }
 .team-details h5{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 300;
 	color: #d0ad55;
 	margin-top: 20px;
@@ -982,7 +984,7 @@ a:focus {
 	margin: 0;
 }
 .team-details h3{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'yekan', sans-serif;
     font-size: 16px;
     color: #282828;
     text-transform: uppercase;
@@ -1053,7 +1055,7 @@ ul.contact-social{
 }
 .btn-submit{
 	text-transform: uppercase;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 400;
 	letter-spacing: 3px;
 	width: 185px;
@@ -1182,7 +1184,7 @@ acronym{
 	margin-top: 70px;
 }
 .f-logo h2{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 30px;
 	line-height: 31px;
 	font-weight: 300;
@@ -1194,7 +1196,7 @@ acronym{
 	padding: 8px 0;
 }
 .f-inner strong{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	color: #ffffff!important;	
 	font-weight: 400;
 	font-size: 18px;
@@ -1227,7 +1229,7 @@ ul.footer-social{
 .f-cta{
 	width: 100%;
 	padding: 30px 0;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 500;
 	background-color: #d0ad55;
 	font-size: 20px;
@@ -1257,7 +1259,7 @@ ul.footer-social{
 	background-size: cover;
 }
 .cta-title-2 h2{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 30px;
 	line-height: 31px;
 	font-weight: 300;
@@ -1269,7 +1271,7 @@ ul.footer-social{
 	margin: 0;	
 }
 .cta-title h2{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 30px;
 	line-height: 31px;
 	font-weight: 300;
@@ -1314,7 +1316,7 @@ ul.footer-social{
 	margin-top: 10px;
 }
 .nav-logo a{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 700;
 	font-size: 22px;
 	text-transform: uppercase;
@@ -1359,7 +1361,7 @@ ul.footer-social{
 ------------------------------------------------------- */
 
 .slider-text{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	color: #fff;
 	font-size: 52px;
 	font-weight: 300;
@@ -1589,11 +1591,11 @@ a:focus {
 	display: block;
 	font-size: 21px;
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 300;
 }
 .c-soon h1{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 36px;
 	line-height: 31px;
 	font-weight: 300;
@@ -1609,7 +1611,7 @@ a:focus {
 	17)	SHORTCODES
 ------------------------------------------------------- */
 .s-title h1{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-size: 46px;
 	line-height: 31px;
 	font-weight: 300;
@@ -1620,13 +1622,13 @@ a:focus {
 	padding: 100px 0;
 }
 .s-heading h1, .s-heading h2, .s-heading h3, .s-heading h4, .s-heading h5, .s-heading h6{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 300;
 	color: #333;
 	-webkit-font-smoothing: antialiased;
 }
 .s-heading-b h1, .s-heading-b h2, .s-heading-b h3, .s-heading-b h4, .s-heading-b h5, .s-heading-b h6{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'yekan', sans-serif;
 	font-weight: 700;
 	color: #333;
 	-webkit-font-smoothing: antialiased;
