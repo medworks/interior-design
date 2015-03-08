@@ -861,11 +861,11 @@ a:focus {
 	color: #d0ad55;
 }
 .cbp-l-grid-blog-desc {
-	font: 300 14px "Open Sans",sans-serif;
+	font: 500 16px "yekan",sans-serif;
 	line-height: 22px;
 	color: #4c4c4c;
 	margin-top: 9px;
-	text-align: right;
+	text-align: justify;
 	direction: rtl;
 }
 .cbp-popup-singlePage .cbp-l-project-subtitle {

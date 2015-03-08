@@ -16,11 +16,11 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#home">صفحه اصلی</a></li>
-                        <li><a href="#about">درباره ما</a></li>                                                                            
-                        <li><a href="#projects">نمونه کارها</a></li>                    
-                        <li><a href="#services">خدمات</a></li>
-                        <li><a href="#blog">مقالات</a></li>     
+                        <li class="active"><a href="index.php#home">صفحه اصلی</a></li>
+                        <li><a href="index.php#about">درباره ما</a></li>                                                                            
+                        <li><a href="index.php#projects">نمونه کارها</a></li>                    
+                        <li><a href="index.php#services">خدمات</a></li>
+                        <li><a href="index.php#blog">مقالات</a></li>     
                         <!-- <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages <i class="fa fa-angle-down fa-lg"></i></a>
                             <ul class="dropdown-menu" role="menu">
@@ -36,7 +36,7 @@
                                 <li><a href="coming_soon.html">Coming Soon</a></li>                                    
                             </ul>
                         </li> -->                      
-                        <li><a href="#contactus">تماس با ما</a></li>  
+                        <li><a href="index.php#contactus">تماس با ما</a></li>  
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
