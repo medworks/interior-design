@@ -156,7 +156,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item houses cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/2.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/2.jpg" alt="">
                                 </div>
@@ -172,7 +172,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item architecture apartments cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/3.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/3.jpg" alt="">
                                 </div>
@@ -188,7 +188,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item architecture cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/4.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/4.jpg" alt="">
                                 </div>
@@ -204,7 +204,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item apartments cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/5.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/5.jpg" alt="">
                                 </div>
@@ -220,7 +220,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/6.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/6.jpg" alt="">
                                 </div>
@@ -236,7 +236,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item houses cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/7.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/7.jpg" alt="">
                                 </div>
@@ -252,7 +252,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item apartments cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/8.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/8.jpg" alt="">
                                 </div>
@@ -268,7 +268,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item apartments cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/9.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/9.jpg" alt="">
                                 </div>
@@ -284,7 +284,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item houses architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/10.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/10.jpg" alt="">
                                 </div>
@@ -300,7 +300,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item houses architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/11.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/11.jpg" alt="">
                                 </div>
@@ -316,7 +316,7 @@ $html2=<<<cd
 
                         <!-- Portfolio Item (image and description) -->
                         <li class="cbp-item houses architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption cbp-lightbox" data-title="عنوان" href="./images/other/12.jpg">
+                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="./images/other/12.jpg" alt="">
                                 </div>
