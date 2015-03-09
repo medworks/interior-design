@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2015 at 08:43 PM
+-- Generation Time: Mar 09, 2015 at 05:55 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `categories`
@@ -62,6 +62,20 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 (3, 'کابینت'),
 (4, 'میز تلوزیون'),
 (5, 'کمد');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `headlines`
+--
+
+CREATE TABLE IF NOT EXISTS `headlines` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `subject` varchar(50) NOT NULL,
+  `body` text NOT NULL,
+  `num` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 

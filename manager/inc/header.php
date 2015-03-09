@@ -166,6 +166,17 @@
                     <span>دسته بندی گروه ها</span>
                 </a>
             </li>
+			<li>
+                <a href="#">
+                    <i class="fa fa-image"></i>
+                    <span>تعریف سر فصل ها</span>
+                </a>
+                <ul>
+                    <li><a href="headline.php?act=new&sel=1">سر فصل اول</a></li>
+                    <li><a href="headline.php?act=new&sel=2">سر فصل دوم</a></li>
+                    <li><a href="headline.php?act=new&sel=3">سر فصل سوم</a></li>
+                </ul>
+            </li>                                
             <li>
                 <a href="#">
                     <i class="fa fa-pencil"></i>
@@ -196,18 +207,7 @@
                     <li><a href="addarticle.php?act=new">ثبت مطلب</a></li>
                     <li><a href="editarticle.php?act=edit">ویرایش مطلب</a></li>
                 </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-image"></i>
-                    <span>گالری تصاویر</span>
-                </a>
-                <ul>
-                    <li><a href="gallerygroup.php?act=new">دسته بندی تصاویر</a></li>
-                    <li><a href="addgallery.php?act=new">تعریف گالری</a></li>
-                    <li><a href="editgallery.php?act=new">ویرایش گالری</a></li>
-                </ul>
-            </li>                                
+            </li>            
             <li>
                 <a href="#">
                     <i class="fa fa-gear"></i>
