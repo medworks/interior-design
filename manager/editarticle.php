@@ -57,11 +57,11 @@ $html.=<<<cd
                                         <table class="table table-bordered table-striped">
                                             <thead>
                                             <tr>
-											<th>#</th>
-                                                <th>عنوان</th>
-                                                <th>متن</th>
-                                                <th>عکس</th>
-                                                <th class="text-center">عملیات</th>
+											    <th style="width='30px';">#</th>
+                                                <th style="width='60px';">عنوان</th>
+                                                <th style="width='80px';">متن</th>
+                                                <th style="width='50px';">عکس</th>
+                                                <th style="width='60px';" class="text-center">عملیات</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -85,14 +85,23 @@ $rows = $db->SelectAll(
 				($pagination->get_page() - 1) * $records_per_page,
 				$records_per_page);
 				
-	
-$vals = array();
 for($i = 0; $i < Count($rows); $i++)
 {
 $rownumber = $i+1;
 $rows[$i]["subject"] =(mb_strlen($rows[$i]["subject"])>40)?mb_substr($rows[$i]["subject"],0,40,"UTF-8")."...":$rows[$i]["subject"];
 $rows[$i]["body"] =(mb_strlen($rows[$i]["body"])>50)?mb_substr($rows[$i]["body"],0,50,"UTF-8")."...":$rows[$i]["body"];
-$pic = $db->Select("pics","*","idd = '{$rows[$i][id]}'");
+$pic = $db->Select("pics","*","idd='{$rows[$i][id]}' AND kind=1");
+/*
+if (empty($pic["img"]))
+{
+	$pic = "";
+}
+else
+{
+	$pic = " <img src='../{$pic[img]} ' width='48px' height='48px' /> ";
+}
+*/
+//$pic="<img src='../{$pic[img]}' width='48px' height='48px' /> ";
 $html.=<<<cd
 
                                                 
@@ -100,13 +109,19 @@ $html.=<<<cd
                                                 <td>{$rownumber}</td>
                                                 <td>{$rows[$i]["subject"]}</td>
                                                 <td>{$rows[$i]["body"]}</td>
-												<td><img src="../{$pic["img"]} " width='48px' height='48px' /></td>
+												<td><img src='../{$pic[img]}' width='48px' height='48px' /> </td>
                                                 <td class="text-center">
 												<a href="addarticle.php?act=edit&did={$rows[$i]["id"]}"  >					
-                                                    <button class="btn btn-xs btn-warning" title="ویرایش"><i class="fa fa-pencil-square-o"></i></button>
+                                                    <button class="btn btn-xs btn-warning" title="ویرایش">
+														<i class="fa fa-pencil-square-o">
+														</i>
+													</button>
 												</a>
 												<a href="?act=del&did={$rows[$i]["id"]}"  >												
-                                                    <button class="btn btn-xs btn-danger" title="پاک کردن"><i class="fa fa-minus"></i></button>
+                                                    <button class="btn btn-xs btn-danger" title="پاک کردن">
+														<i class="fa fa-minus">
+														</i>
+													</button>
 												</a>	
                                                 </td>
                                             </tr>
