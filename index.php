@@ -14,6 +14,7 @@
 	$db = Database::GetDatabase();
 		
 	$slides = $db->SelectAll("slides","*",NULL,"id ASC");
+	$headlines = $db->SelectAll("headlines","*",NULL,"num ASC");
 $html=<<<cd
     <!-- Slider -->        
     <div class="tp-banner-container" id="home">
@@ -75,38 +76,44 @@ $html.=<<<cd
             </div>                
             <div class="row">    
                 <!-- Item -->
+cd;
+for($i = 0; $i < Count($headlines); $i++)
+{
+	switch ($i)
+	{
+		case 0 :
+$icon=<<<cd
+	<div class="col-sm-2">
+          <i class="fa fa-html5 fa-2x"></i>                                    
+    </div>
+cd;
+		break;
+		case 1 :
+$icon=<<<cd
+	<div class="col-sm-2">
+        <i class="fa fa-desktop fa-2x"></i>                                                                                
+    </div>
+cd;
+		break;
+	    case 2 :
+$icon=<<<cd
+	  <div class="col-sm-2">
+            <i class="fa fa-font fa-2x"></i>                                                                                
+      </div>
+cd;
+		break;		
+	}	
+$html.=<<<cd
                 <div class="col-md-4 about-caption about-caption-black">
-                    <div class="col-sm-2">
-                        <i class="fa fa-html5 fa-2x"></i>                                    
-                    </div>
+                    {$icon}
                     <div class="col-sm-10">
-                        <h3>اهداف</h3>                                                                        
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                        <h3>{$headlines[$i]["subject"]}</h3>                                                                        
+                        <p>{$headlines[$i]["body"]}</p>
                     </div>
                 </div> 
-
-                <!-- Item -->
-                <div class="col-md-4 about-caption about-caption-black">
-                    <div class="col-sm-2">
-                        <i class="fa fa-desktop fa-2x"></i>                                                                                
-                    </div>
-                    <div class="col-sm-10">
-                        <h3>چشم انداز</h3>                                           
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="col-md-4 about-caption about-caption-black">
-                    <div class="col-sm-2">
-                        <i class="fa fa-font fa-2x"></i>                                                                                
-                    </div>
-                    <div class="col-sm-10">
-                        <h3>تاریخچه</h3>                                                                                            
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>                                
-                    </div>
-                </div>    
-
+cd;
+}
+$html.=<<<cd
             </div><!-- /row -->                      
         </div><!-- /container -->
 
@@ -354,13 +361,13 @@ cd;
 	$articles = $db->SelectAll("articles","*",NULL,"regdate Desc","0","2");
 	for($i=0;$i<count($articles);$i++)
 	{
-		$pic = $db->Select("pics","*","idd = '{$articles[$i][id]}'");
+		$pic = $db->Select("pics","*","idd = '{$articles[$i][id]}' AND kind = 1 ");
 		$articles[$i]["body"] = strip_tags($articles[$i]["body"]);
 		$articles[$i]["body"] =(mb_strlen($articles[$i]["body"])>200)?mb_substr($articles[$i]["body"],0,200,"UTF-8")."...":$articles[$i]["body"];
 $html.=<<<cd
                             <!-- Blog Item -->
                             <li class="cbp-item ideas motion">
-                                <a href="single-article.php" class="cbp-caption">
+                                <a href="single-article{$articles[$i]['id']}.html" class="cbp-caption">
                                     <!-- Blog Image -->
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="./{$pic[img]}" alt="{$articles[$i][subject]}">                    
@@ -375,7 +382,7 @@ $html.=<<<cd
                                 </a>
                                 <!-- Blog Information -->
                                 <div class="text-center">
-                                    <a href="single-article.php" class="cbp-l-grid-blog-title">{$articles[$i]["subject"]}</a>
+                                    <a href="single-article{$articles[$i]['id']}.html" class="cbp-l-grid-blog-title">{$articles[$i]["subject"]}</a>
                                 </div>
                                 <div class="cbp-l-grid-blog-desc">{$articles[$i]["body"]}</div>                            
                             </li>
