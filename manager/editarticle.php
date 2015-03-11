@@ -88,6 +88,8 @@ $rows = $db->SelectAll(
 for($i = 0; $i < Count($rows); $i++)
 {
 $rownumber = $i+1;
+$rows[$i]["subject"] = strip_tags($rows[$i]["subject"]);
+$rows[$i]["body"] = strip_tags($rows[$i]["body"]);
 $rows[$i]["subject"] =(mb_strlen($rows[$i]["subject"])>40)?mb_substr($rows[$i]["subject"],0,40,"UTF-8")."...":$rows[$i]["subject"];
 $rows[$i]["body"] =(mb_strlen($rows[$i]["body"])>50)?mb_substr($rows[$i]["body"],0,50,"UTF-8")."...":$rows[$i]["body"];
 $pic = $db->Select("pics","*","idd='{$rows[$i][id]}' AND kind=1");
