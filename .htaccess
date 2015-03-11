@@ -1,0 +1,48 @@
+# deny most common except .php
+<FilesMatch "\.(inc|tpl|h|ihtml|sql|ini|conf|class|bin|spd|theme|module)$">
+deny from all
+</FilesMatch>
+                           
+<IFModule mod_rewrite.c>   
+	RewriteEngine On 
+	RewriteRule ^index.html index.php [L]	
+	RewriteRule ^single-article([0-9]+).html single-article.php?aid=$1 [L]		
+	RewriteBase / 	
+
+#Skip WWW	
+	#RewriteCond %{HTTP_HOST} ^www.parsami.com [NC] 
+	#RewriteRule ^(.*)$ www.parsami.com/$1 [L,R=301]
+#Add WWW		
+	RewriteCond %{HTTP_HOST} ^parsami.com$ [NC]
+	RewriteRule ^(.*)$ http://www.parsami.com/$1 [L,R=301]	
+	
+# proc/self/environ? no way!
+	RewriteCond %{QUERY_STRING} proc/self/environ [OR]
+
+	# Block out any script trying to set a mosConfig value through the URL
+	RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|\%3D) [OR]
+
+	# Block out any script trying to base64_encode crap to send via URL
+	RewriteCond %{QUERY_STRING} base64_encode.*(.*) [OR]
+
+	# Block out any script that includes a <script> tag in URL
+	RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+
+	# Block out any script trying to set a PHP GLOBALS variable via URL
+	RewriteCond %{QUERY_STRING} GLOBALS(=|[|\%[0-9A-Z]{0,2}) [OR]
+
+	# Block out any script trying to modify a _REQUEST variable via URL
+	RewriteCond %{QUERY_STRING} _REQUEST(=|[|\%[0-9A-Z]{0,2})
+
+	# Send all blocked request to homepage with 403 Forbidden error!
+	RewriteRule ^(.*)$ index.php [F,L]	
+
+</IFModule>
+# ErrorDocument 404 http://www.parsami.com/themes/404.html
+# Enable / Disable directory Listing/Browsing
+Options -Indexes
+IndexOptions -FancyIndexing
+ServerSignature Off
+
+#RewriteCond %{HTTP_HOST} ^www.parsami.com$
+#RewriteRule ^/?$ "http\:\/\/www\.parsami\.com\/" [R=301,L]
