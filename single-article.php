@@ -1,9 +1,23 @@
 <?php
-
+	include_once("config.php");
+	include_once("classes/functions.php");
+  	include_once("classes/messages.php");
+  	include_once("classes/session.php");	
+  	include_once("classes/security.php");
+  	include_once("classes/database.php");	
+	include_once("classes/login.php");
+    include_once("lib/persiandate.php"); 
+	
+	//error_reporting(E_ALL);
+	//ini_set('display_errors', 1);
+	
+	$db = Database::GetDatabase();
+	$row = $db->Select("articles","*","id = '{$_GET[aid]}'");
+	$pic = $db->Select("pics","*","idd = '{$row[id]}' AND kind = 1 ");
 $html=<<<cd
-    	<div id="projects_bg" style="background: url('./images/project-header.jpg') 50% 0 no-repeat fixed;padding-top: 200px;padding-bottom: 200px;background-size: cover;">         
+    	<div id="projects_bg" style="background: url('{$pic[img]}') 50% 0 no-repeat fixed;padding-top: 200px;padding-bottom: 200px;background-size: cover;">         
             <div class="head-title"> 
-                <h2>عنوان مطلب</h2>                        
+                <h2>{$row["subject"]}</h2>                        
             </div>
         </div>
         <!-- Projects -->
@@ -14,12 +28,11 @@ $html=<<<cd
                 <div class="row">
                     <div class="col-md-12 about-caption">
                         <div class="general-title">
-                            <h2>عنوان</h2>
+                            <h2>{$row["subject"]}</h2>
                             <div class="space-bottom-2x"></div>   
                         </div>
                         <p style="line-height:1.5">
-                            
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                            {$row["body"]}                            
                         </p>                        
                     </div>              
                           
