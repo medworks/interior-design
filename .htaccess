@@ -5,8 +5,8 @@ deny from all
                            
 <IFModule mod_rewrite.c>   
 	RewriteEngine On 
-	RewriteRule ^index.html index.php [L]	
-	RewriteRule ^single-article([0-9]+).html single-article.php?aid=$1 [L]		
+	RewriteRule ^index.html interior-design/index.php [L]	
+	RewriteRule ^single-article([0-9]+).html interior-design/single-article.php?aid=$1 [L]		
 	RewriteBase / 	
 
 #Skip WWW	
