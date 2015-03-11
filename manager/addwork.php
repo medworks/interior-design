@@ -24,10 +24,10 @@
     function uploadpics($mode,$fileup,$db,$id,$lvl,$filename=NULL)
 	{
 		$target_dir = "workpics/";
-		echo "first->".count($_FILES[$fileup]['name']);
+		//echo "first->".count($_FILES[$fileup]['name']);
 		for($i=0; $i<count($_FILES[$fileup]['name']); $i++)
 		{
-			echo "<br/>num is ->".$i;
+		//	echo "<br/>num is ->".$i;
 			$imageFileType = pathinfo($_FILES[$fileup]["name"][$i],PATHINFO_EXTENSION);		
 			$target_file = "../".$target_dir . basename($_FILES[$fileup]["name"][$i]);
 			$uploadOk = 1;
