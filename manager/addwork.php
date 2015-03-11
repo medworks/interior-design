@@ -119,14 +119,14 @@
 		$values = array("'{$_POST[edtsubject]}'","'{$_POST[edttext]}'","'{$date}'");	
 		if (!$db->InsertQuery('works',$fields,$values)) 
 		{			
-			//header('location:addwork.php?act=new&msg=2');			
+			header('location:addwork.php?act=new&msg=2');			
 		} 	
 		else 
 		{  		
 			$id = $db->InsertId();
 			uploadpics("insert","userfile",$db,$id,"1");
 			//echo $db->cmd;
-			//header('location:addwork.php?act=new&msg=1');
+			header('location:addwork.php?act=new&msg=1');
 		}  		
 	}
 	else
