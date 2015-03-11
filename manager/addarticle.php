@@ -77,12 +77,12 @@
 		{    
 			if ($mode == "insert")
 			{
-				// kind 1 is for goods pics, 2 is for news pics, 3 is for section pics
+				// kind 1 is for article pics, 2 is for works pics
 				if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
 				{	
 					$fn = $target_dir . basename($_FILES[$fileup]["name"]);
-					$fields = array("`idd`","`img`");				
-					$values = array("'{$id}'","'{$fn}'");
+					$fields = array("`idd`","`img`","`kind`");				
+					$values = array("'{$id}'","'{$fn}'","'1'");
 					$db->InsertQuery('pics',$fields,$values);
 				} 
 				else 
@@ -104,8 +104,8 @@
 					if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
 					{	
 						$fn = $target_dir . basename($_FILES[$fileup]["name"]);
-						$fields = array("`idd`","`img`");				
-						$values = array("'{$id}'","'{$fn}'");
+						$fields = array("`idd`","`img`","`kind`");				
+						$values = array("'{$id}'","'{$fn}'","'1'");
 						$db->InsertQuery('pics',$fields,$values);
 						//echo $db->cmd;
 					} 
