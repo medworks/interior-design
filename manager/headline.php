@@ -18,11 +18,12 @@
     $row = $db->Select("headlines","*","num = '{$_GET[sel]}'");
     if ($_POST['mark']=="saveinfo")
     {
+		$_POST["edtbody"] = strip_tags($_POST["edtbody"]);
 		$values = array("`subject`"=>"'{$_POST[edtsubject]}'",
 		                "`body`"=>"'{$_POST[edtbody]}'",
 						"`num`"=>"'{$_GET[sel]}'");			
-		$db ->UpdateQuery("headlines",$val,array("`num`='{$_GET[sel]}'"));
-		
+		$db ->UpdateQuery("headlines",$values,array("`num`='{$_GET[sel]}'"));
+		//echo $db->cmd;
         header('location:headline.php');       
     }    
 $html.=<<<cd
@@ -64,7 +65,7 @@ $html.=<<<cd
                                 <div class="panel-body">
                                     <div class="row ls_divider last">
                                         <div class="col-md-10 ls-group-input">
-                                            <textarea class="form-control" id="edttext" name="About_System">
+                                            <textarea class="form-control" id="edttext" name="edtbody">
                                            {$row[body]}
                                             </textarea>
                                         </div>
