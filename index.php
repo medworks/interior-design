@@ -56,7 +56,7 @@ $html.=<<<cd
     <!-- End Slider -->
 cd;
 	$About_System = GetSettingValue('About_System',0);
-$html.=<<<cd
+$html2.=<<<cd
     <!-- Site Wrapper -->
     <div class="site-wrapper" id="about">
 
@@ -103,7 +103,7 @@ $icon=<<<cd
 cd;
 		break;		
 	}	
-$html.=<<<cd
+$html2.=<<<cd
                 <div class="col-md-4 about-caption about-caption-black">
                     {$icon}
                     <div class="col-sm-10">
@@ -113,7 +113,7 @@ $html.=<<<cd
                 </div> 
 cd;
 }
-$html.=<<<cd
+$html2.=<<<cd
             </div><!-- /row -->                      
         </div><!-- /container -->
 
@@ -364,7 +364,7 @@ cd;
 		$pic = $db->Select("pics","*","idd = '{$articles[$i][id]}' AND kind = 1 ");
 		$articles[$i]["body"] = strip_tags($articles[$i]["body"]);
 		$articles[$i]["body"] =(mb_strlen($articles[$i]["body"])>200)?mb_substr($articles[$i]["body"],0,200,"UTF-8")."...":$articles[$i]["body"];
-$html.=<<<cd
+$html2.=<<<cd
                             <!-- Blog Item -->
                             <li class="cbp-item ideas motion">
                                 <a href="single-article{$articles[$i]['id']}.html" class="cbp-caption">
@@ -389,7 +389,7 @@ $html.=<<<cd
 cd;
 }
 
-$html.=<<<cd
+$html2.=<<<cd
                         </ul>
                  </div>
                 </div><!-- /row -->
