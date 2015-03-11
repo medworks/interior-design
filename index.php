@@ -25,7 +25,7 @@ for($i = 0; $i < Count($slides); $i++)
 {
 $html.=<<<cd
                 <!-- SLIDE  -->
-                <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="500" data-thumb="" data-saveperformance="off" data-title="Slide">
+                <li data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="200" data-thumb="" data-saveperformance="off" data-title="Slide">
                     <!-- MAIN IMAGE -->
                     <img src="{$slides[$i][image]}" alt="{$slides[$i][subject]}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                     <!-- LAYERS -->                        
