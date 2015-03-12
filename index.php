@@ -26,7 +26,7 @@ cd;
 					"slotfade-vertical","slideleft");	
 for($i = 0; $i < Count($slides); $i++)
 {
-	$rnd = rand (0,count($effect)-1);
+	$rnd = mt_rand(0,count($effect)-1);
 	$rndeffect = $effect[$rnd];
 $html.=<<<cd
                 <!-- SLIDE  -->
@@ -158,7 +158,7 @@ cd;
 $works = $db->SelectAll("works","*",NULL,"regdate DESC","0","8");   
 for($i = 0;$i < Count($works);$i++)
 {
-	$pic = $db->Select("pics","*","idd= {$works[$i][id]}");   
+	$pic = $db->Select("pics","*","idd= {$works[$i][id]} AND kind=2");   
 $html2.=<<<cd
                         <li class="cbp-item cls{$works[$i]['catid']} cbp-l-grid-masonry-height1">
                             <a class="cbp-caption" data-title="{$works[$i][subject]}" href="single-project.php">

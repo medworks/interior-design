@@ -36,12 +36,15 @@ $html=<<<cd
 cd;
 for($i = 0; $i < Count($articles); $i++)
 {
+	$pic = $db->Select("pics","*","idd= {$articles[$i][id]} AND kind=1");   
+	$articles[$i]["body"] = strip_tags($articles[$i]["body"]);
+	$articles[$i]["body"] =(mb_strlen($articles[$i]["body"])>150)?mb_substr($articles[$i]["body"],0,150,"UTF-8")."...":$articles[$i]["body"];
 $html.=<<<cd
                             <li class="cbp-item">
-                                <a href="blog-posts/post1.html" class="cbp-caption cbp-singlePage">
+                                <a href="single-article{$articles[$i]['id']}.html" class="cbp-caption ">
                                     <!-- Blog Image -->
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="./images/other/blog_1.jpg" alt="Specifie an alternate text for an image">                    
+                                        <img src="{$pic['img']}" alt="{$articles[$i]['subject']}">                    
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
@@ -53,57 +56,14 @@ $html.=<<<cd
                                 </a>
                                 <!-- Blog Information -->
                                 <div class="text-center">
-                                    <a href="blog-posts/post1.html" class="cbp-l-grid-blog-title cbp-singlePage">Lorem ipsum dolor sit amet</a>
+                                    <a href="single-article{$articles[$i]['id']}.html" class="cbp-l-grid-blog-title">{$articles[$i]["subject"]}</a>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>                            
+                                <div class="cbp-l-grid-blog-desc">{$articles[$i]["body"]}</div>                            
                             </li>
-
-                            <!-- Blog Item -->
-                            <li class="cbp-item">
-                                <a href="blog-posts/post2.html" class="cbp-caption cbp-singlePage">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="./images/other/blog_2.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">مشاهده</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="blog-posts/post2.html" class="cbp-l-grid-blog-title cbp-singlePage">Consectetuer adipiscing elit sed diam </a>
-                                </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
-                            </li>
-
-                            <!-- Blog Item -->
-                            <li class="cbp-item">
-                                <a href="blog-posts/post3.html" class="cbp-caption cbp-singlePage">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="./images/other/blog_3.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">مشاهده</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="blog-posts/post3.html" class="cbp-l-grid-blog-title cbp-singlePage">Nonummy nibh euismod tincidunt</a>
-                                </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
-                            </li>                            
-                        </ul>                                                
-                    </div>                                                   
-
+cd;
+}
+$html.=<<<cd
+                    </div>
                 </div><!-- /row -->    
             </div><!-- /container -->
             <!-- End Blog -->
