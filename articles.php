@@ -1,4 +1,19 @@
 <?php
+	include_once("config.php");
+	include_once("classes/functions.php");
+  	include_once("classes/messages.php");
+  	include_once("classes/session.php");	
+  	include_once("classes/security.php");
+  	include_once("classes/database.php");	
+	include_once("classes/login.php");
+    include_once("lib/persiandate.php"); 
+	
+	//error_reporting(E_ALL);
+	//ini_set('display_errors', 1);
+	
+	$db = Database::GetDatabase();	
+	$articles = $db->SelectAll("articles","*",NULL,"regdate Desc");
+	
 $html=<<<cd
         <!-- Header Background Parallax Image -->
         <div id="blog_bg">
@@ -18,6 +33,10 @@ $html=<<<cd
                     <div id="grid-blog" class="cbp-l-grid-blog">
                         <ul>
                             <!-- Blog Item -->
+cd;
+for($i = 0; $i < Count($articles); $i++)
+{
+$html.=<<<cd
                             <li class="cbp-item">
                                 <a href="blog-posts/post1.html" class="cbp-caption cbp-singlePage">
                                     <!-- Blog Image -->
