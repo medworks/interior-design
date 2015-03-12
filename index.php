@@ -21,11 +21,16 @@ $html=<<<cd
         <div class="tp-banner">
             <ul> 
 cd;
+	$effect = array("slotzoom-horizontal","curtain-1","slotslide-vertical","curtain-2",
+					"slidedown","slotzoom-horizontal","slideup","curtain-3","boxfade","boxslide",
+					"slotfade-vertical","slideleft");	
 for($i = 0; $i < Count($slides); $i++)
 {
+	$rnd = rand (0,count($effect)-1);
+	$rndeffect = $effect[$rnd];
 $html.=<<<cd
                 <!-- SLIDE  -->
-                <li data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="200" data-thumb="" data-saveperformance="off" data-title="Slide">
+                <li data-transition="{$rndeffect}" data-slotamount="8" data-masterspeed="600" data-thumb="" data-saveperformance="off" data-title="Slide">
                     <!-- MAIN IMAGE -->
                     <img src="{$slides[$i][image]}" alt="{$slides[$i][subject]}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                     <!-- LAYERS -->                        
@@ -129,215 +134,49 @@ $html2.=<<<cd
                          
                 <!-- Portfolio Filter -->
                 <div id="filters-container" class="cbp-l-filters-alignRight cbp-l-filters-black">
-                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+					<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
                         همه <div class="cbp-filter-counter"></div>
                     </div>
-                    <div data-filter=".apartments" class="cbp-filter-item">
-                        آپارتمان <div class="cbp-filter-counter"></div>
-                    </div>
-                    <div data-filter=".houses" class="cbp-filter-item">
-                        خانه <div class="cbp-filter-counter"></div>
-                    </div>
-                    <div data-filter=".architecture" class="cbp-filter-item">
-                        معماری <div class="cbp-filter-counter"></div>
-                    </div>
-                </div>
+cd;
 
+$cats = $db->SelectAll("categories","*",NULL,"id ASC");
+for($i = 0;$i < Count($cats);$i++)
+{
+$html2.=<<<cd
+                    <div data-filter=".cls{$cats[$i][id]}" class="cbp-filter-item">
+                       {$cats[$i]["name"]} <div class="cbp-filter-counter"></div>
+                    </div>
+cd;
+}
+
+$html2.=<<<cd
+			</div>
                 <div id="grid-container" class="cbp-l-grid-masonry">
                     <ul>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item apartments cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
+						<!-- Portfolio Item (image and description) -->
+cd;
+$works = $db->SelectAll("works","*",NULL,"regdate DESC","0","8");   
+for($i = 0;$i < Count($works);$i++)
+{
+	$pic = $db->Select("pics","*","idd= {$works[$i][id]}");   
+$html2.=<<<cd
+                        <li class="cbp-item cls{$works[$i]['catid']} cbp-l-grid-masonry-height1">
+                            <a class="cbp-caption" data-title="{$works[$i][subject]}" href="single-project.php">
                                 <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/1.jpg" alt="">
+                                    <img src="{$pic['img']}" alt="{$works[$i]["subject"]}>
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>                                                
+                                            <div class="cbp-l-caption-title">{$works[$i]["subject"]}</div>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </li>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item houses cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/2.jpg" alt="">
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item architecture apartments cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/3.jpg" alt="">
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item architecture cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/4.jpg" alt="">
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>                                                
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item apartments cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/5.jpg" alt="">
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/6.jpg" alt="">
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item houses cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/7.jpg" alt="">
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item apartments cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/8.jpg" alt="">
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item apartments cbp-l-grid-masonry-height2">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/9.jpg" alt="">
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item houses architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/10.jpg" alt="">
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item houses architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/11.jpg" alt="">
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <!-- Portfolio Item (image and description) -->
-                        <li class="cbp-item houses architecture cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption" data-title="عنوان" href="single-project.php">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="./images/other/12.jpg" alt="">
-                                </div>
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">عنوان</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
+cd;
+}
+$html2.=<<<cd
                     </ul>
                 </div>                        
             </div><!-- /row -->                   
