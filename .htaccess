@@ -9,7 +9,8 @@ deny from all
 	RewriteRule ^about_us.html interior-design/about_us.php [L]	
 	RewriteRule ^articles.html interior-design/articles.php [L]	
 	RewriteRule ^projects.html interior-design/projects.php [L]	
-	RewriteRule ^single-article([0-9]+).html interior-design/single-article.php?aid=$1 [L]		
+	RewriteRule ^single-article([0-9]+).html interior-design/single-article.php?aid=$1 [L]
+	RewriteRule ^single-project([0-9]+).html interior-design/single-project.php?pid=$1 [L]
 	RewriteBase / 	
 
 #Skip WWW	

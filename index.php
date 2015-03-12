@@ -161,7 +161,7 @@ for($i = 0;$i < Count($works);$i++)
 	$pic = $db->Select("pics","*","idd= {$works[$i][id]} AND kind=2");   
 $html2.=<<<cd
                         <li class="cbp-item cls{$works[$i]['catid']} cbp-l-grid-masonry-height1">
-                            <a class="cbp-caption" data-title="{$works[$i][subject]}" href="single-project.php">
+                            <a class="cbp-caption" data-title="{$works[$i][subject]}" href="single-project{$works[$i]['id']}.html">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="{$pic['img']}" alt="{$works[$i]["subject"]}>
                                 </div>
