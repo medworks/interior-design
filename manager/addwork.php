@@ -19,7 +19,7 @@
 	}
 	$db = Database::GetDatabase();
 	$cats = $db->SelectAll("categories","*");
-	$cbcats = DbSelectOptionTag("cbcats",$cats,"name",NULL,NULL,"form-control",NULL,"  گروه  ");
+	$cbcats = DbSelectOptionTag("cbcats",$cats,"name",NULL,NULL,"form-control",NULL," انتخاب گروه ");
 	
     function uploadpics($mode,$fileup,$db,$id,$lvl,$filename=NULL)
 	{
@@ -115,8 +115,8 @@
 	{
 		
 		$date = date('Y-m-d H:i:s');
-		$fields = array("`subject`","`body`","`regdate`");		
-		$values = array("'{$_POST[edtsubject]}'","'{$_POST[edttext]}'","'{$date}'");	
+		$fields = array("`catid`","`subject`","`body`","`regdate`");		
+		$values = array("'{$_POST[cbcats]}'","'{$_POST[edtsubject]}'","'{$_POST[edttext]}'","'{$date}'");	
 		if (!$db->InsertQuery('works',$fields,$values)) 
 		{			
 			header('location:addwork.php?act=new&msg=2');			
@@ -133,7 +133,7 @@
 	if ($_POST["mark"]=="editnews")
 	{		
 		$id = $_GET["did"];
-		$values = array("`subject`"=>"'{$_POST[edtsubject]}'","`body`"=>"'{$_POST[edttext]}'");
+		$values = array("`catid`"=>"'{$_POST[cbcats]}'","`subject`"=>"'{$_POST[edtsubject]}'","`body`"=>"'{$_POST[edttext]}'");
 		$db->UpdateQuery("works",$values,array("id='{$_GET[did]}'"));
 		uploadpics("edit","userfile",$db,$id,"1");		
 		header('location:addwork.php?act=new&msg=1');
@@ -175,7 +175,21 @@ $html=<<<cd
                 <!-- Main Content Element  Start-->
                 <form id="frmnews" name="frmnews" enctype="multipart/form-data" action="" method="post" class="form-inline ls_form" role="form">
                    
-                      <div class="row">
+                       <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">گروه</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        {$cbcats}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+					  <div class="row">
                         <div class="col-md-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
