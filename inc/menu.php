@@ -16,10 +16,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.php#home">صفحه اصلی</a></li>
-                        <li><a href="index.php#about">درباره ما</a></li>                                                                            
-                        <li><a href="index.php#projects">نمونه کارها</a></li>                    
-                        <li><a href="index.php#blog">مقالات</a></li>     
+                        <li class="active"><a href="./">صفحه اصلی</a></li>
+                        <li><a href="about_us.html">درباره ما</a></li>                                                                            
+                        <li><a href="projects.html">نمونه کارها</a></li>                    
+                        <li><a href="articles.html">مقالات</a></li>     
                         <!-- <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages <i class="fa fa-angle-down fa-lg"></i></a>
                             <ul class="dropdown-menu" role="menu">
