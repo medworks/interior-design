@@ -1,5 +1,14 @@
-     
-        
+<?php
+	include_once("config.php");
+	include_once("classes/functions.php");
+	
+	$Address = GetSettingValue('Address',0);
+	
+	$Tell_Number = GetSettingValue('Tell_Number',0);
+	$Fax_Number = GetSettingValue('Fax_Number',0);
+	
+	$Contact_Email = GetSettingValue('Contact_Email',0);
+$html=<<<cd
     <!-- Footer -->  
     <div class="footer-big">
         <div class="container">
@@ -21,7 +30,7 @@
                         <strong>آدرس</strong>
                         <div class="f-space"></div>
                         <address>                                
-                            مشهد، سه راه فلسطین، ساختمان 202، طبقه اول، واحد3
+							{$Address}
                         </address>                           
                     </div>
                 </div>
@@ -35,7 +44,9 @@
                         <strong>تلفن</strong>
                         <div class="f-space"></div>
                         <address style="direction:ltr;text-align:right">                                
-                            (513) 766-6436
+							{$Tell_Number}
+							<br/>
+							{$Fax_Number}
                         </address>    
                     </div>
                 </div>
@@ -49,7 +60,7 @@
                         <strong>ایمیل</strong>
                         <div class="f-space"></div>
                         <address> 
-                            info@mediateq.ir
+							{$Contact_Email}
                         </address>    
                     </div>      
                 </div>                           
@@ -94,3 +105,6 @@
     
 </body>
 </html>
+cd;
+	echo $html;
+?>

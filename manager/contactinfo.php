@@ -125,7 +125,7 @@ $html.=<<<cd
                                     </div>
                                     <div class="row ls_divider">
                                         <div class="form-group">
-                                            <label class="col-md-2 control-label">تلفن دوم شرکت</label>
+                                            <label class="col-md-2 control-label">فاکس شرکت</label>
                                             <div class="col-md-10">
                                                 <input type="text" class="form-control" name="Fax_Number" value="{$Fax_Number}" />
                                             </div>
