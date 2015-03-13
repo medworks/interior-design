@@ -116,7 +116,7 @@ $html.=<<<cd
                                                 <td>{$rows[$i]["body"]}</td>
 												<td><img src='../{$pic[img]}' width='48px' height='48px' /> </td>
                                                 <td class="text-center">
-												<a href="?act=img&did={$rows[$i]["id"]}"  >												
+												<a href="morepics.php?act=img&did={$rows[$i]["id"]}"  >												
                                                     <button class="btn btn-xs btn-danger" title="عکس بیشتر">
 														<i class="fa fa-minus">
 														</i>

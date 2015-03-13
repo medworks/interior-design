@@ -18,6 +18,10 @@
 	} 
 	$db = Database::GetDatabase();
 	$rows = $db->SelectAll("pics","*","kind = 2");
+	$pics = $db->SelectAll("pics","*","kind = 2 AND idd='{$_GET['did']}'");
+	
+	foreach($pics as $key=>$val)
+		$img[] = $val['id'];	
 	
 $html=<<<cd
     <!--Page main section start-->
@@ -50,10 +54,17 @@ $html=<<<cd
 cd;
 for($i=0;$i < count($rows);$i++)
 {
+	if (in_array($rows[$i]['id'],$img))
+	{
+		$checked = "checked";
+	}
+	else
+	{
+		$checked = "";
+	}
 $html.=<<<cd
 	<img src="../{$rows[$i]['img']}" width="64px" height="64px"/>	
-	<input type="checkbox" name="pic" value="{$rows[$i]['id']}">
-	
+	<input type="checkbox" name="pic" value="{$rows[$i]['id']}" {$checked}>
 	
 cd;
 }
