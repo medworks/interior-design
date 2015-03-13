@@ -57,7 +57,8 @@ $html.=<<<cd
                                         <table class="table table-bordered table-striped">
                                             <thead>
                                             <tr>
-											    <th style="width='30px';">#</th>
+											    <th style="width='10px';">#</th>
+												<th style="width='30px';">گروه</th>
                                                 <th style="width='60px';">عنوان</th>
                                                 <th style="width='80px';">متن</th>
                                                 <th style="width='50px';">عکس</th>
@@ -93,6 +94,7 @@ $rows[$i]["body"] = strip_tags($rows[$i]["body"]);
 $rows[$i]["subject"] =(mb_strlen($rows[$i]["subject"])>40)?mb_substr($rows[$i]["subject"],0,40,"UTF-8")."...":$rows[$i]["subject"];
 $rows[$i]["body"] =(mb_strlen($rows[$i]["body"])>50)?mb_substr($rows[$i]["body"],0,50,"UTF-8")."...":$rows[$i]["body"];
 $pic = $db->Select("pics","*","idd='{$rows[$i][id]}' AND kind=2");
+$cat = $db->Select("categories","*","id = {$rows[$i][catid]}");	
 /*
 if (empty($pic["img"]))
 {
@@ -109,10 +111,18 @@ $html.=<<<cd
                                                 
                                             <tr>
                                                 <td>{$rownumber}</td>
+												<td>{$cat["name"]}</td>
                                                 <td>{$rows[$i]["subject"]}</td>
                                                 <td>{$rows[$i]["body"]}</td>
 												<td><img src='../{$pic[img]}' width='48px' height='48px' /> </td>
                                                 <td class="text-center">
+												<a href="?act=img&did={$rows[$i]["id"]}"  >												
+                                                    <button class="btn btn-xs btn-danger" title="عکس بیشتر">
+														<i class="fa fa-minus">
+														</i>
+													</button>
+												</a>	
+												
 												<a href="addwork.php?act=edit&did={$rows[$i]["id"]}"  >					
                                                     <button class="btn btn-xs btn-warning" title="ویرایش">
 														<i class="fa fa-pencil-square-o">
@@ -124,7 +134,7 @@ $html.=<<<cd
 														<i class="fa fa-minus">
 														</i>
 													</button>
-												</a>	
+												</a>			
                                                 </td>
                                             </tr>
 cd;

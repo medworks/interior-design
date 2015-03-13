@@ -18,9 +18,7 @@
 		die(); // solve a security bug
 	}
 	$db = Database::GetDatabase();
-	$cats = $db->SelectAll("categories","*");
-	$cbcats = DbSelectOptionTag("cbcats",$cats,"name",NULL,NULL,"form-control",NULL," انتخاب گروه ");
-	
+		
     function uploadpics($mode,$fileup,$db,$id,$lvl,$filename=NULL)
 	{
 		$target_dir = "workpics/";
@@ -112,8 +110,7 @@
     
     
 	if ($_POST["mark"]=="savenews")
-	{
-		
+	{		
 		$date = date('Y-m-d H:i:s');
 		$fields = array("`catid`","`subject`","`body`","`regdate`");		
 		$values = array("'{$_POST[cbcats]}'","'{$_POST[edtsubject]}'","'{$_POST[edttext]}'","'{$date}'");	
@@ -139,8 +136,11 @@
 		header('location:addwork.php?act=new&msg=1');
 	}
 	
+	$cats = $db->SelectAll("categories","*");
 	if ($_GET['act']=="new")
-	{
+	{		
+		$cbcats = DbSelectOptionTag("cbcats",$cats,"name",NULL,NULL,"form-control",NULL," انتخاب گروه ");
+		
 		$insertoredit = "
 			<button id='submit' type='submit' class='btn btn-default'>ثبت</button>
 			<input type='hidden' name='mark' value='savenews' /> ";
@@ -148,7 +148,8 @@
 	
 	if ($_GET['act']=="edit")
 	{
-		$row=$db->Select("articles","*","id='{$_GET[did]}'",NULL);		
+		$row=$db->Select("works","*","id='{$_GET[did]}'",NULL);		
+		$cbcats = DbSelectOptionTag("cbcats",$cats,"name",$row["catid"],NULL,"form-control",NULL," انتخاب گروه ");
 		$insertoredit = "
 			<button id='submit' type='submit' class='btn btn-default'>ویرایش</button>
 			<input type='hidden' name='mark' value='editnews' /> ";
