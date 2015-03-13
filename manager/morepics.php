@@ -22,7 +22,13 @@
 	
 	foreach($pics as $key=>$val)
 		$img[] = $val['id'];	
-	
+	if ($_POST["mark"]=="change")
+	{
+		$getimgs = $_POST["pic"];
+		//$values = array("`idd`"=>"'{$_POST[cbcats]}'");
+		//$db->UpdateQuery("pics",$values,array("id='{$_GET[did]}'"));
+		//header('location:editwork.php?act=edit');
+	}
 $html=<<<cd
     <!--Page main section start-->
     <section id="min-wrapper">
@@ -51,6 +57,7 @@ $html=<<<cd
                                 <div class="panel-body">
                                     <!--Table Wrapper Start-->
                                     <div class="table-responsive ls-table"> 
+									<form action="" method="post" name="frmaddmore">
 cd;
 for($i=0;$i < count($rows);$i++)
 {
@@ -64,11 +71,14 @@ for($i=0;$i < count($rows);$i++)
 	}
 $html.=<<<cd
 	<img src="../{$rows[$i]['img']}" width="64px" height="64px"/>	
-	<input type="checkbox" name="pic" value="{$rows[$i]['id']}" {$checked}>
-	
+	<input type="checkbox" name="pic" value="{$rows[$i]['id']}" {$checked}>	
 cd;
 }
 $html.=<<<cd
+			<br/><br/><br/>
+			<input type="submit" name="submit" value="ثبت" />
+			<input type="hidden" name="mark" value="change" />
+			</form>
                                     </div>									
                                     <!--Table Wrapper Finish-->                                    
                                 </div>
