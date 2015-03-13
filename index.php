@@ -163,7 +163,7 @@ $html2.=<<<cd
                         <li class="cbp-item cls{$works[$i]['catid']} cbp-l-grid-masonry-height1">
                             <a class="cbp-caption" data-title="{$works[$i][subject]}" href="single-project{$works[$i]['id']}.html">
                                 <div class="cbp-caption-defaultWrap">
-                                    <img src="{$pic['img']}" alt="{$works[$i]["subject"]}>
+                                    <img src="{$pic['img']}" alt="{$works[$i]["subject"]}"/>
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
