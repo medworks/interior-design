@@ -133,7 +133,6 @@ $html=<<<cd
                                         </ul>
                                     </div>
                                 </div>
-
                             </div>
 
                             <div class="col-md-6"> 
@@ -149,8 +148,8 @@ $html=<<<cd
                                 <!-- Message -->                                                                        
                                 <textarea name="comments" cols="40" rows="5" id="comments" placeholder="پیام"></textarea>
 
-                                <!-- Submit Button -->                                        
-                                <button type="submit" class="btn btn-default btn-submit submit" id="submit" value="submit" style="font-size:20px">ارسال</button>
+                                <!-- Submit Button -->                                                                        
+								<button type="submit" class="btn btn-default btn-submit submit" id="submit" value="submit" style="font-size:20px">ارسال</button>
                                 
                             </div>
                                                                                                 

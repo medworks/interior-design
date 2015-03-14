@@ -14,6 +14,7 @@
 
 	$name    = $_POST['name'];
 	$email   = $_POST['email'];
+	$tel = $_POST['tel'];
 	$text = $_POST['comments'];
     $subject = "contact";
 	$message = $text;
