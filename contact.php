@@ -12,9 +12,34 @@
 	//ini_set('display_errors', 1);
 	
 	$db = Database::GetDatabase();	
-    $About_System = GetSettingValue('About_System',0);
+    $Address = GetSettingValue('Address',0);
+	
+	$Tell_Number = GetSettingValue('Tell_Number',0);
+	$Fax_Number = GetSettingValue('Fax_Number',0);
+	
+	$Contact_Email = GetSettingValue('Contact_Email',0);
 	
 $html=<<<cd
+<script>	
+		$(document).ready(function(){
+			$("#frmcontact").submit(function(){               
+			    $.ajax({
+				    type: "POST",
+				    url: "./manager/ajaxcommand.php?contact=reg",
+				    data: $("#frmcontact").serialize(),
+					    success: function(msg)
+						{
+							$("#note-contact").ajaxComplete(function(event, request, settings){				
+								$(this).hide();
+								$(this).html(msg).slideDown("slow");
+								$(this).html(msg);
+							});
+						}
+			    });
+				return false;
+			});
+		});
+	</script>
         <!-- Header Background Parallax Image -->
         <div id="about_bg">
             <div class="head-title">
@@ -27,7 +52,7 @@ $html=<<<cd
             <div class="container padding-bottom">
                 <div class="col-lg-12" id="contact">                
                     <div id="message"></div>
-                    <form method="post" action="contact.php" name="contactform" id="contactform">
+                    <form method="post"  name="frmcontact" id="frmcontact">
                         <fieldset>
                             <div class="col-md-6 rtl">
 
@@ -44,8 +69,7 @@ $html=<<<cd
                                             <span><b>آدرس</b></span> 
                                             <address>                            
                                                 <small>
-                                                    190 Tehun Street<br>
-                                                    Los Angeles, CA 913 20                                                            
+												{$Address}                                                           
                                                 </small>                               
                                             </address>             
                                         </div>                   
@@ -60,7 +84,7 @@ $html=<<<cd
                                             <span><b>تلفن</b></span>
                                             <address>                            
                                                 <small>                                                           
-                                                    +88 (0) 61 3 8376 6284  
+												{$Tell_Number}
                                                 </small>
                                             </address>            
                                         </div>                    
@@ -77,7 +101,7 @@ $html=<<<cd
                                             <span><b>فکس</b></span>
                                             <address>                            
                                                 <small>
-                                                    +88 (0) 61 3 8376 6284                          
+												{$Fax_Number}                        
                                                 </small>
                                             </address>
                                         </div>
@@ -92,7 +116,7 @@ $html=<<<cd
                                             <span><b>ایمیل</b></span>
                                             <address>                            
                                                 <small>
-                                                   no-reply@yourdomain.com                    
+												{$Contact_Email}                    
                                                 </small>
                                             </address>
                                         </div>
@@ -133,6 +157,7 @@ $html=<<<cd
                         </fieldset>
                     </form>
                 </div>
+				<div id="note-contact" style="font-size:22px;color:#DE5328"></div>
             </div>   
         </div>
         <!-- Google Map (adress on map can be changed in app.js file) -->
