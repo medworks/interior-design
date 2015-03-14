@@ -89,21 +89,21 @@ for($i = 0; $i < Count($headlines); $i++)
 		case 0 :
 $icon=<<<cd
 	<div class="col-sm-2">
-          <i class="fa fa-html5 fa-2x"></i>                                    
+          <i class="fa fa-bullseye fa-2x"></i>                                    
     </div>
 cd;
 		break;
 		case 1 :
 $icon=<<<cd
 	<div class="col-sm-2">
-        <i class="fa fa-desktop fa-2x"></i>                                                                                
+        <i class="fa fa-eye fa-2x"></i>                                                                                
     </div>
 cd;
 		break;
 	    case 2 :
 $icon=<<<cd
 	  <div class="col-sm-2">
-            <i class="fa fa-font fa-2x"></i>                                                                                
+            <i class="fa fa-clock-o fa-2x"></i>                                                                                
       </div>
 cd;
 		break;		
@@ -190,7 +190,7 @@ $html2.=<<<cd
 		<div class="container">
 		 <!-- Section General Title -->
                 <div class="general-title general-title-black text-center">
-                    <h2>مطالب</h2>  
+                    <h2>مقالات</h2>  
                     <div class="space-bottom-2x"></div>                       
                 </div>
 				<div class="row">
