@@ -35,7 +35,7 @@
                                 <li><a href="coming_soon.html">Coming Soon</a></li>                                    
                             </ul>
                         </li> -->                      
-                        <li><a href="ontact.html">تماس با ما</a></li>  
+                        <li><a href="contact.html">تماس با ما</a></li>  
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
