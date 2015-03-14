@@ -6,7 +6,8 @@ deny from all
 <IFModule mod_rewrite.c>   
 	RewriteEngine On 
 	RewriteRule ^index.html interior-design/index.php [L]	
-	RewriteRule ^about_us.html interior-design/about_us.php [L]	
+	RewriteRule ^about.html interior-design/about.php [L]	
+	RewriteRule ^contact.html interior-design/contact.php [L]	
 	RewriteRule ^articles.html interior-design/articles.php [L]	
 	RewriteRule ^projects.html interior-design/projects.php [L]	
 	RewriteRule ^single-article([0-9]+).html interior-design/single-article.php?aid=$1 [L]

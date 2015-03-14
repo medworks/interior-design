@@ -551,7 +551,7 @@ a:focus {
 ------------------------------------------------------- */
 
 #about_bg{	
-	background: url('../img/header_bg/image1.jpg') 50% 0 no-repeat fixed;
+	background: url('../images/about-header.jpg') 50% 0 no-repeat fixed;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	background-size: cover;					
@@ -666,7 +666,7 @@ a:focus {
 ------------------------------------------------------- */
 
 .site-wrapper{
-	padding-top: 80px;
+	padding-top: 40px;
 }
 .about-caption p{
 	margin: 0;

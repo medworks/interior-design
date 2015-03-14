@@ -17,7 +17,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="./">صفحه اصلی</a></li>
-                        <li><a href="about_us.html">درباره ما</a></li>                                                                            
+                        <li><a href="about.html">درباره ما</a></li>                                                                            
                         <li><a href="projects.html">نمونه کارها</a></li>                    
                         <li><a href="articles.html">مقالات</a></li>     
                         <!-- <li class="dropdown">
@@ -35,7 +35,7 @@
                                 <li><a href="coming_soon.html">Coming Soon</a></li>                                    
                             </ul>
                         </li> -->                      
-                        <li><a href="index.php#contactus">تماس با ما</a></li>  
+                        <li><a href="ontact.html">تماس با ما</a></li>  
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
