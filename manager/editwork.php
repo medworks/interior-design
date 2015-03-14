@@ -117,8 +117,8 @@ $html.=<<<cd
 												<td><img src='../{$pic[img]}' width='48px' height='48px' /> </td>
                                                 <td class="text-center">
 												<a href="morepics.php?act=img&did={$rows[$i]["id"]}"  >												
-                                                    <button class="btn btn-xs btn-danger" title="عکس بیشتر">
-														<i class="fa fa-minus">
+                                                    <button class="btn btn-xs btn-success" title="عکس بیشتر">
+														<i class="fa fa-plus">
 														</i>
 													</button>
 												</a>	
