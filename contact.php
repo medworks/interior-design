@@ -166,7 +166,7 @@ $html=<<<cd
                         </fieldset>
                     </form>
                 </div>
-				<div id="note-contact" style="font-size:22px;color:#DE5328">4545</div>
+				<div id="note-contact" style="font-size:22px;color:#DE5328"></div>
             </div>   
         </div>
         <!-- Google Map (adress on map can be changed in app.js file) -->
