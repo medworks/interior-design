@@ -8,6 +8,11 @@
 	$Fax_Number = GetSettingValue('Fax_Number',0);
 	
 	$Contact_Email = GetSettingValue('Contact_Email',0);
+	
+	$Rss_Add = GetSettingValue('Rss_Add',0);	
+	$FaceBook_Add = GetSettingValue('FaceBook_Add',0);
+	$Twitter_Add = GetSettingValue('Twitter_Add',0);
+	$Gplus_Add = GetSettingValue('Gplus_Add',0);
 $html=<<<cd
     <!-- Footer -->  
     <div class="footer-big">
@@ -79,10 +84,10 @@ $html=<<<cd
                 <div class="col-sm-6 col-md-6">
                     <!-- Social Icons -->                              
                     <ul class="footer-social footer-social-black">
-                        <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li><a href="{$FaceBook_Add}"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li><a href="{$Twitter_Add}"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li><a href="{$Gplus_Add}"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li><a href="{$Rss_Add}"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x fa-inverse"></i></span></a></li>
                     </ul>
                 </div>
             </div><!-- /row -->
