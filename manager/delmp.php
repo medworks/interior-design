@@ -26,11 +26,14 @@
 		foreach($getimgs as $key=>$val)
 			$imgid[] = $val;
 		$imgids = implode(',',$imgid);	
-		$db->cmd = "DELETE FROM Pics WHERE id NOT IN ({$imgids}) AND kind = 2";
-		$db->RunSQL();				
+		$db->cmd = " DELETE FROM Pics WHERE id NOT IN ({$imgids}) AND kind=2 AND idd={$_GET['id']}";
+		$db->RunSQL();
+		
+		$values = array("`checked`"=>"'1'");
+		$db->UpdateQuery("pics",$values,array("idd='{$_GET[id]}' AND kind=2"));
+		header('location:delmp.php');
 	}			
-		header('location:delmp.php');	
-	}
+		
 $html=<<<cd
     <!--Page main section start-->
     <section id="min-wrapper">
