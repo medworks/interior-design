@@ -17,7 +17,7 @@
 		die(); // solve a security bug
 	} 
 	$db = Database::GetDatabase();
-	$rows = $db->SelectAll("pics","*","kind = 2");
+	//$rows = $db->SelectAll("pics","*","kind = 2");
 	$pics = $db->SelectAll("pics","*","kind = 2 AND idd='{$_GET['did']}'");
 	
 	foreach($pics as $key=>$val)
@@ -59,9 +59,9 @@ $html=<<<cd
                                     <div class="table-responsive ls-table"> 
 									<form action="" method="post" name="frmaddmore">
 cd;
-for($i=0;$i < count($rows);$i++)
+for($i=0;$i < count($pics);$i++)
 {
-	if (in_array($rows[$i]['id'],$img))
+	if ($pics[$i]['checked'])
 	{
 		$checked = "checked";
 	}
@@ -70,8 +70,8 @@ for($i=0;$i < count($rows);$i++)
 		$checked = "";
 	}
 $html.=<<<cd
-	<img src="../{$rows[$i]['img']}" width="64px" height="64px"/>	
-	<input type="checkbox" name="pic" value="{$rows[$i]['id']}" {$checked}>	
+	<img src="../{$pics[$i]['img']}" width="64px" height="64px"/>	
+	<input type="checkbox" name="pic" value="{$pics[$i]['idd']}" {$checked}>	
 cd;
 }
 $html.=<<<cd
