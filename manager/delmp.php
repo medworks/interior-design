@@ -18,7 +18,7 @@
 	} 
 	$db = Database::GetDatabase();
 	//$rows = $db->SelectAll("pics","*","kind = 2");
-	$pics = $db->SelectAll("pics","*","kind = 2 AND idd='{$_GET['did']}'");
+	$pics = $db->SelectAll("pics","*","kind = 2 AND idd='{$_GET['id']}'");
 	
 	foreach($pics as $key=>$val)
 		$img[] = $val['id'];	
@@ -42,7 +42,7 @@ $html=<<<cd
                         <!--Top breadcrumb start -->
                         <ol class="breadcrumb">
                             <li><a href="javascript:void(0);"><i class="fa fa-home"></i></a></li>
-                            <li class="active">عکس های بیشتر</li>
+                            <li class="active">حذف/اضافه کردن عکس </li>
                         </ol>
                         <!--Top breadcrumb start -->
                     </div>
@@ -52,16 +52,33 @@ $html=<<<cd
                         <div class="col-md-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">حذف / اضافه  عکس</h3>
+                                    <h3 class="panel-title">حذف/اضافه عکس</h3>
                                 </div>
                                 <div class="panel-body">
                                     <!--Table Wrapper Start-->
-                                    <div class="table-responsive ls-table"> 									
-									<a href="addmp.php?type=add&id={$_GET['did']}"> اضافه کردن عکس
-									</a>
-									<br/>
-									<a href="delmp.php?type=del&id={$_GET['did']}">حذف عکس
-									</a>
+                                    <div class="table-responsive ls-table"> 
+									<form action="" method="post" name="frmaddmore">
+cd;
+for($i=0;$i < count($pics);$i++)
+{
+	if ($pics[$i]['checked'])
+	{
+		$checked = "checked";
+	}
+	else
+	{
+		$checked = "";
+	}
+$html.=<<<cd
+	<img src="../{$pics[$i]['img']}" width="64px" height="64px"/>	
+	<input type="checkbox" name="pic" value="{$pics[$i]['idd']}" {$checked}>	
+cd;
+}
+$html.=<<<cd
+			<br/><br/><br/>
+			<input type="submit" name="submit" value="ثبت" />
+			<input type="hidden" name="mark" value="change" />
+			</form>
                                     </div>									
                                     <!--Table Wrapper Finish-->                                    
                                 </div>
