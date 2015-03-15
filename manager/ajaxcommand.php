@@ -12,14 +12,13 @@
 
 	$admin = GetSettingValue('Contact_Email',0);
 
-	$name    = $_POST['name'];
-	$email   = $_POST['email'];
-	$tel = $_POST['tel'];
-	$text = $_POST['comments'];
-    $subject = "contact";
-	$message = $text;
+	$name    = strip_tags($_POST['name']);
+	$email   = strip_tags($_POST['email']);
+	$tel   = strip_tags($_POST['tel']);
+	$message = strip_tags($_POST['comments']);
+    $subject = "تماس با ما";	
 
-	if( strlen($name)>=1 && checkEmail($email) && strlen($text)>=1 ){
+	if( strlen($name)>=5 && checkEmail($email) && strlen($message)>=5 ){
 		if( @mail (
 				$admin,
 				"$subject",
