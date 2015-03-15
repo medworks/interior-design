@@ -6,14 +6,17 @@
   	include_once("classes/security.php");
   	include_once("classes/database.php");	
 	include_once("classes/login.php");
-    include_once("lib/persiandate.php"); 
+    include_once("lib/persiandate.php");
+	include_once("classes/seo.php");
 	
 	//error_reporting(E_ALL);
 	//ini_set('display_errors', 1);
 	
 	$db = Database::GetDatabase();	
     $About_System = GetSettingValue('About_System',0);
+	$seo = Seo::GetSeo();
 	
+	$seo->Site_Title = "درباره ما";
 $html=<<<cd
         <!-- Header Background Parallax Image -->
         <div id="about_bg">

@@ -7,9 +7,13 @@
   	include_once("classes/database.php");	
 	include_once("classes/login.php");
     include_once("lib/persiandate.php"); 
+	include_once("classes/seo.php");
 	
 	//error_reporting(E_ALL);
 	//ini_set('display_errors', 1);
+	$seo = Seo::GetSeo();
+	
+	$seo->Site_Title = "تماس با ما";
 	
 	$db = Database::GetDatabase();	
     $Address = GetSettingValue('Address',0);

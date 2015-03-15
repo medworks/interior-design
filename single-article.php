@@ -7,13 +7,17 @@
   	include_once("classes/database.php");	
 	include_once("classes/login.php");
     include_once("lib/persiandate.php"); 
+	include_once("classes/seo.php");	
 	
 	//error_reporting(E_ALL);
 	//ini_set('display_errors', 1);
+	$seo = Seo::GetSeo();
 	
 	$db = Database::GetDatabase();
 	$row = $db->Select("articles","*","id = '{$_GET[aid]}'");
 	$pic = $db->Select("pics","*","idd = '{$row[id]}' AND kind = 1 ");
+	
+	$seo->Site_Title = $row["subject"];
 $html=<<<cd
     	<div id="projects_bg" style="background: url('{$pic[img]}') 50% 0 no-repeat fixed;padding-top: 200px;padding-bottom: 200px;background-size: cover;">         
             <div class="head-title"> 

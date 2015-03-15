@@ -3,10 +3,13 @@
 	include_once("./config.php");
 	include_once("./classes/database.php");
 	include_once("./classes/functions.php");
+	include_once("classes/seo.php");
 	
 	$Site_Title = GetSettingValue('Site_Title',0);
 	$Site_KeyWords = GetSettingValue('Site_KeyWords',0);
-	$Site_Describtion = GetSettingValue('Site_Describtion',0);	
+	$Site_Describtion = GetSettingValue('Site_Describtion',0);
+
+	$seo = Seo::GetSeo();	
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -20,9 +23,9 @@
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $Site_Title?></title>
-    <meta name="description" content="<?php echo $Site_Describtion;?>">
-    <meta name="keywords" content="<?php echo $Site_KeyWords;?>">
+    <title><?php echo $seo->Site_Title;?></title>
+    <meta name="description" content="<?php echo$seo->Site_Describtion;?>">
+    <meta name="keywords" content="<?php echo $seo->Site_KeyWords;?>">
     <meta name="author" content="Mediateq.ir">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"> 
