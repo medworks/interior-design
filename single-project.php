@@ -21,11 +21,17 @@ $html=<<<cd
         <div class="tp-banner-project">
             <ul> 
 cd;
+$effect = array("slotzoom-horizontal","curtain-1","slotslide-vertical","curtain-2",
+					"slidedown","slotzoom-horizontal","slideup","curtain-3","boxfade","boxslide",
+					"slotfade-vertical","slideleft");
+	
 for($i = 0; $i < Count($pics); $i++)
 {
+	$rnd = mt_rand(0,count($effect)-1);
+	$rndeffect = $effect[$rnd];			
 $html.=<<<cd
                 <!-- SLIDE  -->
-                <li data-transition="fade" data-slotamount="5" data-masterspeed="500" data-thumb="" data-saveperformance="off" data-title="Slide">
+                <li data-transition="{$rndeffect}" data-slotamount="8" data-masterspeed="500" data-thumb="" data-saveperformance="off" data-title="Slide">
                     <!-- MAIN IMAGE -->
                     <img src="{$pics[$i][img]}" alt="{$row['subject']}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                     <!-- LAYERS -->                        
