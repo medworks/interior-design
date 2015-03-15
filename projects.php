@@ -62,7 +62,7 @@ $html.=<<<cd
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title">{$works[$i]["subject"]}</div>
+											<div class="cbp-l-caption-text">مشاهده</div>                                            
                                         </div>
                                     </div>
                                 </div>
