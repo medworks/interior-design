@@ -36,6 +36,7 @@
 
     <!-- Css Theme -->           
     <link rel="stylesheet" href="./css/style2.css">
+	<script src="./js/jquery-1.11.1.min.js"></script>
 </head>
 <body> 
 

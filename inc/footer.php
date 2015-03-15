@@ -90,8 +90,7 @@ $html=<<<cd
     </div>        
     <!-- End Footer -->               
 
-    <!-- jQuery Plugins -->                                 
-    <script src="./js/jquery-1.11.1.min.js"></script>                    
+    <!-- jQuery Plugins -->    
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery.themepunch.tools.min.js"></script>   
     <script src="./js/jquery.themepunch.revolution.min.js"></script> 
