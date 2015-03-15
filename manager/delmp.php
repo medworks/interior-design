@@ -31,7 +31,7 @@
 		
 		$values = array("`checked`"=>"'1'");
 		$db->UpdateQuery("pics",$values,array("idd='{$_GET[id]}' AND kind=2"));
-		header('location:delmp.php');
+		header("location:delmp.php?id={$_GET['id']}");
 	}			
 		
 $html=<<<cd

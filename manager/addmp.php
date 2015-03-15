@@ -110,7 +110,7 @@
 	if ($_POST["mark"]=="addpic")
 	{
 		uploadpics("insert","userfile",$db,$_GET["id"],"1");
-		header('location:addmp.php?msg=1');
+		header("location:addmp.php?id={$_GET['id']}&msg=1");
 	}
 $msgs = GetMessage($_GET['msg']);	
 $html=<<<cd
