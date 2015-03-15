@@ -107,7 +107,7 @@
 			}
 		}	
 	}
-	if ($_POSTp["mark"]=="addpic")
+	if ($_POST["mark"]=="addpic")
 	{
 		uploadpics("insert","userfile",$db,$_GET["id"],"1");
 		header('location:addmp.php?msg=1');
@@ -136,7 +136,11 @@ $html=<<<cd
                         <div class="col-md-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">حذف / اضافه  عکس</h3>
+                                    <h3 class="panel-title">آپلود عکس جدید /
+									<a href="delmp.php?type=del&id={$_GET['id']}" >
+										الصاق عکس به پروژه
+									</a>
+									</h3>
                                 </div>
                                 <div class="panel-body">
                                     <!--Table Wrapper Start-->
@@ -162,6 +166,7 @@ $html=<<<cd
 											</div>
 										</div>
 									</div>
+									<input type="submit" name="submit" value="ارسال عکس" />
 									<input type="hidden" name="mark" value="addpic" />
 									</form>
                                     </div>									

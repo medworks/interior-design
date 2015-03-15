@@ -154,7 +154,7 @@
 			<button id='submit' type='submit' class='btn btn-default'>ویرایش</button>
 			<input type='hidden' name='mark' value='editnews' /> ";
 	}
-  
+$msgs = GetMessage($_GET['msg']);	  
 $html=<<<cd
     <!--Page main section start-->
     <section id="min-wrapper">
@@ -173,6 +173,7 @@ $html=<<<cd
                         <!--Top breadcrumb start -->
                     </div>
                 </div>
+				{$msgs}
                 <!-- Main Content Element  Start-->
                 <form id="frmnews" name="frmnews" enctype="multipart/form-data" action="" method="post" class="form-inline ls_form" role="form">
                    
