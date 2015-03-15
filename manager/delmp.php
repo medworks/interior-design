@@ -18,16 +18,18 @@
 	} 
 	$db = Database::GetDatabase();
 	//$rows = $db->SelectAll("pics","*","kind = 2");
-	$pics = $db->SelectAll("pics","*","kind = 2 AND idd='{$_GET['id']}'");
+	$pics = $db->SelectAll("pics","*","kind = 2 AND idd='{$_GET['id']}'");	
 	
-	foreach($pics as $key=>$val)
-		$img[] = $val['id'];	
 	if ($_POST["mark"]=="change")
 	{
-		$getimgs = $_POST["pic"];
-		//$values = array("`idd`"=>"'{$_POST[cbcats]}'");
-		//$db->UpdateQuery("pics",$values,array("id='{$_GET[did]}'"));
-		//header('location:editwork.php?act=edit');
+		$getimgs = $_POST["pic"];		
+		foreach($getimgs as $key=>$val)
+			$imgid[] = $val;
+		$imgids = implode(',',$imgid);	
+		$db->cmd = "DELETE FROM Pics WHERE id NOT IN ({$imgids}) AND kind = 2";
+		$db->RunSQL();				
+	}			
+		header('location:delmp.php');	
 	}
 $html=<<<cd
     <!--Page main section start-->
@@ -42,7 +44,10 @@ $html=<<<cd
                         <!--Top breadcrumb start -->
                         <ol class="breadcrumb">
                             <li><a href="javascript:void(0);"><i class="fa fa-home"></i></a></li>
-                            <li class="active">حذف/اضافه کردن عکس </li>
+                            <li class="active">حذف/اضافه کردن عکس /
+							<a href="addmp.php?type=add&id={$_GET['id']}"> آپلود عکس جدید 
+							</a>
+							</li>
                         </ol>
                         <!--Top breadcrumb start -->
                     </div>
@@ -71,7 +76,7 @@ for($i=0;$i < count($pics);$i++)
 	}
 $html.=<<<cd
 	<img src="../{$pics[$i]['img']}" width="64px" height="64px"/>	
-	<input type="checkbox" name="pic" value="{$pics[$i]['idd']}" {$checked}>	
+	<input type="checkbox" name="pic[]" value="{$pics[$i]['id']}" {$checked}>	
 cd;
 }
 $html.=<<<cd
