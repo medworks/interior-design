@@ -83,7 +83,7 @@
         <!--Logo text start-->
         <div class="header-logo">
             <a href="javascript:void(0);" title="کلینیک رهیاب">
-                <h1>صنایع ام دی اف پارسا</h1>
+                <h1>ام دی اف پارسا</h1>
             </a>
         </div>
         <!--Logo text End-->
