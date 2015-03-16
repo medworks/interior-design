@@ -57,10 +57,15 @@ $html=<<<cd
                                 <div class="panel-body">
                                     <!--Table Wrapper Start-->
                                     <div class="table-responsive ls-table"> 									
-									<a href="addmp.php?type=add&id={$_GET['did']}"> اضافه کردن عکس
+									<a href="addmp.php?type=add&id={$_GET['did']}">
+                                        <button class="btn btn-success">
+                                        <i class="fa fa-plus"></i> اضافه کردن عکس</button>
 									</a>
+                                    <br/>
 									<br/>
-									<a href="delmp.php?type=del&id={$_GET['did']}">حذف عکس
+									<a href="delmp.php?type=del&id={$_GET['did']}">
+                                        <button class="btn btn-warning">
+                                        <i class="fa fa-minus"></i> حذف عکس</button>
 									</a>
                                     </div>									
                                     <!--Table Wrapper Finish-->                                    
