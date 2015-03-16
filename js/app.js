@@ -6,6 +6,27 @@
 	/* ==============================================
 		REVOLUTION SLIDER
 	=============================================== */
+	    var href=window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+
+	    if(href==""){
+	          jQuery('ul.nav li.index').addClass('active');
+	    }
+	    jQuery("ul.nav li a").each(function(){
+	       
+	      if(jQuery(this).attr("href") == href){
+	        jQuery(this).parents("ul.nav li").addClass("active");
+	      }
+	      if(href.indexOf("article")>0){
+	          jQuery('ul.nav li.article').addClass('active');
+	      }
+	       if(href.indexOf("project")>0){
+	          jQuery('ul.nav li.project').addClass('active');
+	      }
+	    });
+
+	/* ==============================================
+		REVOLUTION SLIDER
+	=============================================== */
 											
 		jQuery('.tp-banner').show().revolution(
 		{
