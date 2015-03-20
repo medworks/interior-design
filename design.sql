@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 11, 2015 at 06:47 PM
+-- Generation Time: Mar 20, 2015 at 06:26 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -93,22 +93,23 @@ CREATE TABLE IF NOT EXISTS `pics` (
 `id` int(11) NOT NULL,
   `idd` int(11) NOT NULL,
   `img` varchar(100) NOT NULL,
-  `kind` tinyint(4) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+  `kind` tinyint(4) NOT NULL,
+  `checked` tinyint(1) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `pics`
 --
 
-INSERT INTO `pics` (`id`, `idd`, `img`, `kind`) VALUES
-(1, 1, 'articlepics/thumb2.jpg', 1),
-(2, 2, 'articlepics/8.jpg', 1),
-(3, 12, 'workpics/2.jpg', 2),
-(4, 12, 'workpics/3.jpg', 2),
-(5, 12, 'workpics/4.jpg', 2),
-(6, 13, 'workpics/2.jpg', 2),
-(7, 13, 'workpics/3.jpg', 2),
-(8, 13, 'workpics/4.jpg', 2);
+INSERT INTO `pics` (`id`, `idd`, `img`, `kind`, `checked`) VALUES
+(1, 1, 'articlepics/thumb2.jpg', 1, 0),
+(2, 2, 'articlepics/8.jpg', 1, 0),
+(9, 14, 'workpics/5.jpg', 2, 1),
+(11, 14, 'workpics/7.jpg', 2, 1),
+(12, 14, 'workpics/8.jpg', 2, 1),
+(18, 14, 'workpics/7.jpg', 2, 1),
+(19, 14, 'workpics/8.jpg', 2, 1),
+(20, 14, 'workpics/8.jpg', 2, 0);
 
 -- --------------------------------------------------------
 
@@ -224,26 +225,16 @@ CREATE TABLE IF NOT EXISTS `works` (
   `subject` varchar(100) NOT NULL,
   `body` text NOT NULL,
   `regdate` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `works`
 --
 
 INSERT INTO `works` (`id`, `catid`, `subject`, `body`, `regdate`) VALUES
-(1, 0, 'کار اول', '<p>لالتلتلتالتالتالتا</p>\r\n\r\n<p>اتلتالتالتالعا</p>\r\n', '2015-03-11 17:28:35'),
-(2, 0, ' کار اول', '<p>لاتنتالالا</p>\r\n', '2015-03-11 18:19:25'),
-(3, 0, ' کار اول', '<p>لاتنتالالا</p>\r\n', '2015-03-11 18:20:57'),
-(4, 0, 'کاردوم', '<p>لتاللللالالتالتا</p>\r\n', '2015-03-11 18:21:40'),
-(5, 0, ' کار سوم', '<p>کار سوم</p>\r\n', '2015-03-11 18:28:42'),
-(6, 0, ' کار سوم', '<p>کار سوم</p>\r\n', '2015-03-11 18:29:19'),
-(7, 0, ' کار سوم', '<p>کار سوم</p>\r\n', '2015-03-11 18:29:32'),
-(8, 0, ' کار چهارم', '<p>ختخهته</p>\r\n', '2015-03-11 18:29:51'),
-(9, 0, ' کار چهارم', '<p>ختخهته</p>\r\n', '2015-03-11 18:30:17'),
-(10, 0, '   تست خبر', '<p>خحجخحج-</p>\r\n', '2015-03-11 18:30:27'),
-(11, 0, '   تست خبر', '<p>خحجخحج-</p>\r\n', '2015-03-11 18:30:48'),
-(12, 0, '   تست خبر', '<p>خحجخحج-</p>\r\n', '2015-03-11 18:31:25'),
-(13, 0, '   تست خبر', '<p>خحجخحج-</p>\r\n', '2015-03-11 18:44:58');
+(12, 4, '   تست خبر', '<p>خحجخحج-</p>\r\n', '2015-03-11 18:31:25'),
+(13, 5, '   تست خبر', '<p>خحجخحج-</p>\r\n', '2015-03-11 18:44:58'),
+(14, 3, ' کابینت های گلاس', '<p>این کار توسط چوب نوع های گلاس انجام شده است</p>\r\n', '2015-03-12 14:18:48');
 
 --
 -- Indexes for dumped tables
@@ -320,7 +311,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 -- AUTO_INCREMENT for table `pics`
 --
 ALTER TABLE `pics`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `settings`
 --
@@ -340,7 +331,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `works`
 --
 ALTER TABLE `works`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
